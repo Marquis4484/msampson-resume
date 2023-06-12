@@ -10,7 +10,7 @@ export default function Home() {
          <span className="font-bold">Software Developer</span>
          <p className="text-[30px] py-[20px]">Welcome to my website</p>
          <p className="text-[30px] py-[20px]">
-            While are exploring this webpage please...
+            While are exploring this wepage please...
          </p>
          <p className="text-[30px] py-[20px]">Feel free to</p>
          <p className="text-[30px] py-[20px]">set the mood</p>
