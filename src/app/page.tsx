@@ -1,9 +1,10 @@
 import React from "react";
-import { About, ContactMe } from "@/components";
+import { About, ContactMe, Home } from "@/components";
 
-export default function Home() {
+export default function HomePage() {
    return (
       <h1>
+         <Home />
          <About />
          <ContactMe />
       </h1>
