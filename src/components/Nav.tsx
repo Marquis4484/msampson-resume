@@ -4,7 +4,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 export default function Nav() {
    return (
       <div
-         className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] 
+         className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] fixed w-full
          drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]"
       >
          <div className="">
