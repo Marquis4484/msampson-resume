@@ -1,12 +1,18 @@
 import React from "react";
-import { About, ContactMe, Home } from "@/components";
+import { About, ContactMe, Home, Nav} from "@/components";
 
 export default function HomePage() {
    return (
-      <h1>
+      <div>
+         <Nav/>
+         
+          <div className="pt-[60px]" >
          <Home />
          <About />
          <ContactMe />
-      </h1>
+      </div>
+      
+      </div>
+     
    );
 }
