@@ -13,7 +13,7 @@ export default function Home() {
             While are exploring this webpage please...
          </p>
          <p className="text-[30px] py-[20px]">Feel free to</p>
-         <p className="text-[30px] py-[20px]">set the sutff mood</p>
+         <p className="text-[30px] py-[20px]">set the sutff mod</p>
          <button>
             <ArrowPathIcon className="h-[52px] w-[66px]" />
          </button>
