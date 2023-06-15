@@ -1,5 +1,5 @@
 import React from "react";
-import { About, ContactMe, Home, Nav } from "@/components";
+import { About, ContactMe, Home, Nav, Skills, Projects } from "@/components";
 
 export default function HomePage() {
    return (
@@ -9,6 +9,8 @@ export default function HomePage() {
          <div className="pt-[80px] px-[10px]">
             <Home />
             <About />
+            <Skills />
+            <Projects />
             <ContactMe />
          </div>
       </div>
