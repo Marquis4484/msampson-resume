@@ -6,7 +6,7 @@ export default function HomePage() {
       <div>
          <Nav />
 
-         <div className="pt-[80px]">
+         <div className="pt-[80px] px-[10px]">
             <Home />
             <About />
             <ContactMe />
