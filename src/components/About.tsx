@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
    return (
-      <div className="pt-[100px]">
+      <div className="pt-[80px]">
          <h1 className="text-[30px] text-bold text-center pb-[10px]">
             A Bit About Myself
          </h1>

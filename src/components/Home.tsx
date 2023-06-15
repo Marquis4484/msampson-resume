@@ -12,9 +12,9 @@ export default function Home() {
          </span>
          <p className="text-[24px]">Welcome to my website!</p>
          <p className="text-[26px] p-[15px] text-center">
-            Now, while you are exploring this website please feel free to...
+            While reading through this webpage, please feel free to...
          </p>
-         <p className="text-[28px] py-[5px]">Hit this button!</p>
+         <p className="text-[28px] py-[5px] px-[30px]">Hit this button!</p>
          <button className="bg-[#D9D9D9] rounded-full h-[70px] w-[70px] ">
             <ArrowPathIcon className="h-[50px] w-[50px] inline-flex" />
          </button>
