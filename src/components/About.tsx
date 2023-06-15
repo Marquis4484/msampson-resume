@@ -13,7 +13,7 @@ export default function About() {
             I’ll put in nothing but my best work. I feel as though what allows
             me to work so hard is my strong sense of empathy. Undesrtand how
             people are and a personal level is the key to finding success within
-            teamork.
+            a team.
          </p>
       </div>
    );
