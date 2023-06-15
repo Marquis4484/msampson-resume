@@ -1,8 +1,10 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Lato } from "@next/font/google";
 
+// const inter = Inter({ subsets: ["latin"] });
 
-const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
    title: "Marquis Sampson Resume Website",
@@ -16,10 +18,7 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en">
-         <body className={inter.className}>
-            
-            {children}
-         </body>
+         <body className={lato.className}>{children}</body>
       </html>
    );
 }
