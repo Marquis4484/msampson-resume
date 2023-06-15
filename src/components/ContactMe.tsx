@@ -10,6 +10,7 @@ export default function ContectMe() {
             <input
                type="text"
                className="bg-[#D9D9D9] w-[260px] h-[200px] p-[10px] mb-[30px]"
+               placeholder="Message"
             />
          </form>
       </div>
