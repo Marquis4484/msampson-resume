@@ -7,6 +7,7 @@ export default function HomePage() {
          <Nav />
 
          <div className="pt-[80px] px-[10px]">
+            {/* padding adding to offset fixed nav bar */}
             <Home />
             <About />
             <Skills />
