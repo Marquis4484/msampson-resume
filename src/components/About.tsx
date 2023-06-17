@@ -7,15 +7,16 @@ export default function About() {
             A Bit About Myself
          </h1>
          <h2 className="font-semibold text-center pb-[20px]">
-            When it comes to working with others...
+            When it comes to my work ethic...
          </h2>
          <p className="px-[20px]">
-            I’m always willing to work hard for what I desire. Whether its
-            working on a personal project or problem solving task for others,
-            I’ll put in nothing but my best work. I feel as though what allows
-            me to work so hard is my strong sense of empathy. Undesrtand how
-            people are and a personal level is the key to finding success within
-            a team.
+            I am a hard-working individual with a tenacious attitude and an
+            eagerness to learn. Perseverance is what allows me to continue to
+            learn and grow within this field. Without these traits, I would not
+            be where I am today. If I were to work alongside your team, I would
+            bring nothing but positive energy and creative solutions to your
+            workflow. Please, consider me for whatever project you have in mind.
+            I promise I won&apos;t disappoint you!
          </p>
       </div>
    );
