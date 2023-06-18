@@ -16,7 +16,9 @@ export default function ContectMe() {
                className="bg-[#D9D9D9] w-[260px] h-[200px] p-[10px] mb-[30px]"
                placeholder="Message"
             />
-            <button>Send</button>
+            <button className="bg-[#D9D9D9] rounded-[50px] p-[8px] self-center">
+               Send
+            </button>
          </form>
       </div>
    );
