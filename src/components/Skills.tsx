@@ -16,7 +16,7 @@ export default function Skills() {
          <IoLogoJavascript />
          <p className="px-[20px]">
             If you&apos;d like a professional list of what I can offer, please
-            download my resume by clicking the resume button down below.
+            download my resume by clicking the resume button down below!
          </p>
 
          <button className="bg-[#D9D9D9] rounded-[50px] p-[8px] self-center">
