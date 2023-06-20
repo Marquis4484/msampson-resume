@@ -15,10 +15,11 @@ export default function About() {
             I am a hard-working individual with a tenacious attitude and an
             eagerness to learn. Perseverance is what allows me to continue to
             learn and grow within this field. Without these traits, I would not
-            be able to code as well as I can. If I were to work alongside your
-            team, I would bring nothing but positive energy and creative
-            solutions to your workflow. Please, consider me for whatever project
-            you have in mind. I promise I won&apos;t disappoint you!
+            be able to thrive as a software developer. If I were to work
+            alongside your team, I would bring nothing but positive energy and
+            creative solutions to your team&apos;s workflow. Please, consider me
+            for whatever project you have in mind. I promise I won&apos;t
+            disappoint you!
          </p>
       </div>
    );
