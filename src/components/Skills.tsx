@@ -27,7 +27,7 @@ export default function Skills() {
             Here is a list of coding langauges, frameworks and libraries that
             I&apos;ve worked with so far. Take a look!
          </p>
-         <div className="flex flex-wrap items-center">
+         <div className="flex flex-wrap items-center justify-center">
             <div className="mx-[12px] flex flex-col items-center">
                <FaReact className="text-[50px]  text-blue-600" />
                <p>React</p>
@@ -108,7 +108,6 @@ export default function Skills() {
                <SiCplusplus className="text-[50px] text-blue-600" />
                <p>C++</p>
             </div>
-            <p className=" mx-[20px] text-[50px]">C</p>
          </div>
 
          <p className="px-[20px]">
@@ -116,7 +115,7 @@ export default function Skills() {
             download my resume by clicking the resume button down below!
          </p>
 
-         <button className="bg-[#D9D9D9] rounded-[50px] p-[8px] self-center">
+         <button className="bg-[#A5A5A5] rounded-[50px] p-[8px] self-center">
             Resume!
          </button>
       </div>
