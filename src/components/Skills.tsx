@@ -26,27 +26,88 @@ export default function Skills() {
             Here is a list of coding langauges, frameworks and libraries that
             I&apos;ve worked with so far. Take a look!
          </p>
-         <FaReact className="h-6 w-6 text-blue-600" />
-         <SiRedux className="h-6 w-6 text-blue-600" />
-         <BsFiletypeScss className="h-6 w-6 text-blue-600" />
-         <SiTailwindcss className="h-6 w-6 text-blue-600" />
-         <IoLogoJavascript className="h-6 w-6 text-blue-600" />
-         <SiJavascript className="h-6 w-6 text-blue-600" />
-         <DiSass className="h-6 w-6 text-blue-600" />
-         <DiCss3 className="h-6 w-6 text-blue-600" />
-         <BsGit className="h-6 w-6 text-blue-600" />
-         <IoLogoNodejs className="h-6 w-6 text-blue-600" />
-         <SiFirebase className="h-6 w-6 text-blue-600" />
-         <SiRuby className="h-6 w-6 text-blue-600" />
-         <DiSwift className="h-6 w-6 text-blue-600" />
-         <SiVisualstudio className="h-6 w-6 text-blue-600" />
-         <SiTypescript className="h-6 w-6 text-blue-600" />
-         <SiGraphql className="h-6 w-6 text-blue-600" />
-         <DiJava className="h-6 w-6 text-blue-600" />
-         <SiHtml5 className="h-6 w-6 text-blue-600" />
-         <TbBrandNextjs className="h-6 w-6 text-blue-600" />
-         <p>C</p>
-         <p>C++</p>
+         <div className="flex flex-wrap">
+            <div className="mx-[20px]">
+               <FaReact className="text-[50px] text-center text-blue-600" />
+               <p>React</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiRedux className="text-[50px] text-center text-blue-600" />
+               <p>Redux</p>
+            </div>
+            <div className="mx-[20px]">
+               <BsFiletypeScss className="text-[50px] text-center text-blue-600" />
+               <p>Scss</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiTailwindcss className="text-[50px] text-blue-600" />
+               <p>Tailwindcss</p>
+            </div>
+            <div className="mx-[20px]">
+               <IoLogoJavascript className="text-[50px] text-center text-blue-600" />
+               <p>Javascript</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiJavascript className="text-[50px] text-blue-600" />
+               <p>Express</p>
+            </div>
+            <div className="mx-[20px]">
+               <DiSass className="text-[50px] text-blue-600" />
+               <p>Sass</p>
+            </div>
+            <div className="mx-[20px]">
+               <DiCss3 className="text-[50px] text-blue-600" />
+               <p>CSS</p>
+            </div>
+            <div className="mx-[20px]">
+               <BsGit className="text-[50px] text-blue-600" />
+               <p>Git</p>
+            </div>
+            <div className="mx-[20px]">
+               <IoLogoNodejs className="text-[50px] text-blue-600" />
+               <p>Node.js</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiFirebase className="text-[50px] text-blue-600" />
+               <p>Firebase</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiRuby className="text-[50px] text-blue-600" />
+               <p>Ruby</p>
+            </div>
+            <div className="mx-[20px]">
+               <DiSwift className="text-[50px]  text-blue-600" />
+               <p>Swift</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiVisualstudio className="text-[50px]  text-blue-600" />
+               <p>VS Code</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiTypescript className="text-[50px]  text-blue-600" />
+               <p>Typescript</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiGraphql className="text-[50px] text-blue-600" />
+               <p>GraphQL</p>
+            </div>
+            <div className="mx-[20px]">
+               <DiJava className="text-[50px] text-blue-600" />
+               <p>Java</p>
+            </div>
+            <div className="mx-[20px]">
+               <SiHtml5 className="text-[50px]  text-blue-600" />
+               <p>HTML</p>
+            </div>
+            <div className="mx-[20px]">
+               <TbBrandNextjs className="text-[50px] text-blue-600" />
+               <p>Next.js</p>
+            </div>
+
+            <p className=" mx-[20px] text-[50px]">C</p>
+            <p className="mx-[20px] text-[50px]">C</p>
+            <p>++</p>
+         </div>
 
          <p className="px-[20px]">
             If you&apos;d like a professional list of what I can offer, please
