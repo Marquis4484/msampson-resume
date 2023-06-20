@@ -27,79 +27,79 @@ export default function Skills() {
             I&apos;ve worked with so far. Take a look!
          </p>
          <div className="flex flex-wrap">
-            <div className="mx-[20px]">
-               <FaReact className="text-[50px] text-center text-blue-600" />
+            <div className="mx-[12px] flex flex-col items-center">
+               <FaReact className="text-[50px]  text-blue-600" />
                <p>React</p>
             </div>
-            <div className="mx-[20px]">
-               <SiRedux className="text-[50px] text-center text-blue-600" />
+            <div className="mx-[12px] flex flex-col items-center">
+               <SiRedux className="text-[50px]  text-blue-600" />
                <p>Redux</p>
             </div>
-            <div className="mx-[20px]">
-               <BsFiletypeScss className="text-[50px] text-center text-blue-600" />
+            <div className="mx-[12px] flex flex-col items-center">
+               <BsFiletypeScss className="text-[50px]  text-blue-600" />
                <p>Scss</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiTailwindcss className="text-[50px] text-blue-600" />
                <p>Tailwindcss</p>
             </div>
-            <div className="mx-[20px]">
-               <IoLogoJavascript className="text-[50px] text-center text-blue-600" />
+            <div className="mx-[12px] flex flex-col items-center">
+               <IoLogoJavascript className="text-[50px]  text-blue-600" />
                <p>Javascript</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiJavascript className="text-[50px] text-blue-600" />
                <p>Express</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <DiSass className="text-[50px] text-blue-600" />
                <p>Sass</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <DiCss3 className="text-[50px] text-blue-600" />
                <p>CSS</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <BsGit className="text-[50px] text-blue-600" />
                <p>Git</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <IoLogoNodejs className="text-[50px] text-blue-600" />
                <p>Node.js</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiFirebase className="text-[50px] text-blue-600" />
                <p>Firebase</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiRuby className="text-[50px] text-blue-600" />
                <p>Ruby</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <DiSwift className="text-[50px]  text-blue-600" />
                <p>Swift</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiVisualstudio className="text-[50px]  text-blue-600" />
                <p>VS Code</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiTypescript className="text-[50px]  text-blue-600" />
                <p>Typescript</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiGraphql className="text-[50px] text-blue-600" />
                <p>GraphQL</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <DiJava className="text-[50px] text-blue-600" />
                <p>Java</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="mx-[12px] flex flex-col items-center">
                <SiHtml5 className="text-[50px]  text-blue-600" />
                <p>HTML</p>
             </div>
-            <div className="mx-[20px]">
+            <div className="flex flex-col items-center mx-[20px]">
                <TbBrandNextjs className="text-[50px] text-blue-600" />
                <p>Next.js</p>
             </div>
