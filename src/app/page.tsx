@@ -1,5 +1,13 @@
 import React from "react";
-import { About, ContactMe, Home, Nav, Skills, Projects } from "@/components";
+import {
+   About,
+   ContactMe,
+   Home,
+   Nav,
+   Skills,
+   Projects,
+   Footer,
+} from "@/components";
 
 export default function HomePage() {
    return (
@@ -14,6 +22,7 @@ export default function HomePage() {
             <Projects />
             <ContactMe />
          </div>
+         <Footer />
       </div>
    );
 }

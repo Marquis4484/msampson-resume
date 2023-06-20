@@ -19,7 +19,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Skills() {
    return (
-      <div className="pt-[20px] flex flex-col">
+      <div className="pt-[50px] flex flex-col">
          <h1 className="text-[30px] text-bold text-center pb-[10px]">
             The Skills That I Can Offer
          </h1>
@@ -109,15 +109,6 @@ export default function Skills() {
                <p>C++</p>
             </div>
          </div>
-
-         <p className="px-[20px]">
-            If you&apos;d like a professional list of what I can offer, please
-            download my resume by clicking the resume button down below!
-         </p>
-
-         <button className="bg-[#A5A5A5] rounded-[50px] p-[8px] self-center">
-            Resume!
-         </button>
       </div>
    );
 }
