@@ -1,10 +1,7 @@
-import { useState } from "react";
+import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { Backdrop } from "@mui/material";
 
 export default function Nav() {
-   const [isOpen, setIsOpen] = useState(false);
-
    return (
       <div
          className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] w-full fixed
@@ -16,10 +13,7 @@ export default function Nav() {
             </div>
          </div>
 
-         <button
-            className="flex flex-row"
-            onClick={() => setIsOpen((prev) => !prev)}
-         >
+         <button className="flex flex-row">
             <Bars3Icon className="h-[52px] w-[66px]" />
             {/* <div>Home</div>
             <div>About</div>
