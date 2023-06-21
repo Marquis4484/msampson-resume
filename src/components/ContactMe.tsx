@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContectMe() {
    return (
-      <div className="pt-[50px] ">
+      <div className="pt-[50px] flex flex-col items-center">
          <h1 className="text-[30px] text-bold text-center pb-[10px]">
             Thank you for visiting my webpage!
          </h1>
@@ -17,7 +17,7 @@ export default function ContectMe() {
             />
             <textarea
                placeholder="Leave a quick Message"
-               className="bg-[#D9D9D9] h-[200px] w-[260px] "
+               className="bg-[#D9D9D9] h-[200px] w-[260px]"
             ></textarea>
             <button className="bg-[#A5A5A5] p-[8px] m-[10px] rounded-[50px] self-center">
                Send

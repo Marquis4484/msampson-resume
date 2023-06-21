@@ -1,7 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Backdrop } from "@mui/material";
 
 export default function Nav() {
+   const [isOpen, setIsOpen] = useState(false);
+
    return (
       <div
          className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] w-full fixed
@@ -12,13 +15,17 @@ export default function Nav() {
                MS
             </div>
          </div>
-         <div className="flex flex-row">
+
+         <button
+            className="flex flex-row"
+            onClick={() => setIsOpen((prev) => !prev)}
+         >
             <Bars3Icon className="h-[52px] w-[66px]" />
             {/* <div>Home</div>
             <div>About</div>
             <div>Skills</div>
             <div>Projects</div> */}
-         </div>
+         </button>
       </div>
    );
 }
