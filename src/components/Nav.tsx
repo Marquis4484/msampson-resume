@@ -2,7 +2,12 @@
 import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
-export default function Nav({ isOpen, setIsOpen }) {
+interface ChildProps {
+   isOpen: boolean;
+   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Nav({ isOpen, setIsOpen }: ChildProps) {
    const toggle = () => {
       setIsOpen(!isOpen);
       console.log(isOpen);

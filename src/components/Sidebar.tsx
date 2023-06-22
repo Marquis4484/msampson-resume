@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Sidebar({ isOpen, setIsOpen }) {
+interface ChildProps {
+   isOpen: boolean;
+   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
    return (
       <div className={"Menu " + (isOpen && "active")}>
          <ul>
