@@ -1,7 +1,12 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
-export default function Nav() {
+export default function Nav({ isOpen, setIsOpen }) {
+   const toggle = () => {
+      setIsOpen(!isOpen);
+      console.log(isOpen);
+   };
    return (
       <div
          className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] w-full fixed
@@ -14,7 +19,7 @@ export default function Nav() {
          </div>
 
          <button className="flex flex-row">
-            <Bars3Icon className="h-[52px] w-[66px]" />
+            <Bars3Icon className="h-[52px] w-[66px]" onClick={toggle} />
             {/* <div>Home</div>
             <div>About</div>
             <div>Skills</div>
