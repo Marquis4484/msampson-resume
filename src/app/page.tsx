@@ -16,7 +16,7 @@ export default function HomePage() {
 
    return (
       <div>
-         {/* <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
 
          <div className="pt-[80px] px-[10px]">
