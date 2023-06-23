@@ -8,7 +8,7 @@ interface ChildProps {
 export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
    return (
       <div>
-         <div className="w-[250px] h-screen bg-[#049572] fixed flex items-center justify-center z-[1]">
+         <div className="w-[250px] h-screen bg-[#049572] fixed flex items-center justify-center z-[2]">
             <ul>
                <li onClick={() => setIsOpen(false)}>
                   <a href="#Intro">Home</a>
@@ -27,7 +27,7 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
                </li>
             </ul>
          </div>
-         <div className="bg-[#000000] opacity-[0.5] h-screen z-0">Content</div>
+         <div className="bg-[#000000] opacity-[0.5] h-[100%] z-[1]"></div>
       </div>
    );
 }
