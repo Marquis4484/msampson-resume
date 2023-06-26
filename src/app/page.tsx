@@ -8,7 +8,7 @@ import {
    Skills,
    Projects,
    Footer,
-   Sidebar,
+   SidebarReact,
 } from "@/components";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
 
    return (
       <div>
-         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+         <SidebarReact isOpen={isOpen} setIsOpen={setIsOpen} />
          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
 
          <div className="pt-[80px] px-[10px] z-[0]">
