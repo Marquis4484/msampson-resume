@@ -26,6 +26,7 @@ export default function HomePage() {
             <Projects />
             <ContactMe />
          </div>
+
          <Footer />
       </div>
    );
