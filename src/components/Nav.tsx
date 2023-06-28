@@ -8,10 +8,11 @@ interface Nav {
 }
 
 export default function Nav({ isOpen, setIsOpen }: Nav) {
-   const toggle = () => {
-      setIsOpen(!isOpen);
+   const handleOpen = () => {
+      setIsOpen(true);
       console.log(isOpen);
    };
+
    return (
       <div
          className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] w-full fixed
@@ -24,7 +25,7 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
          </div>
 
          <button className="flex flex-row">
-            <Bars3Icon className="h-[52px] w-[66px]" onClick={toggle} />
+            <Bars3Icon className="h-[52px] w-[66px]" onClick={handleOpen} />
             {/* <div>Home</div>
             <div>About</div>
             <div>Skills</div>
