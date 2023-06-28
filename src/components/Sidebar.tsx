@@ -11,7 +11,7 @@ interface ChildProps {
 export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
    return (
       <>
-         <div className="w-[200px] h-screen bg-[#3d3d3d] fixed flex items-center justify-center z-[2]">
+         <div className="w-[190px] h-screen bg-[#3d3d3d] fixed flex items-center justify-center z-[2]">
             <ul>
                <li>
                   <a href="#Intro">Home</a>

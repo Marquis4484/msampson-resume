@@ -15,7 +15,7 @@ export default function Home() {
             While reading through this webpage, please feel free to...
          </p>
          <p className="text-[28px] py-[5px] px-[30px]">Hit this button!</p>
-         <button className="bg-[#A5A5A5] rounded-full h-[70px] w-[70px] ">
+         <button className="bg-[#D9D9D9] rounded-full h-[70px] w-[70px]">
             <ArrowPathIcon className="h-[50px] w-[50px] inline-flex" />
          </button>
       </div>
