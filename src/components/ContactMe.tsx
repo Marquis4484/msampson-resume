@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContectMe() {
    return (
-      <div className="pt-[50px] flex flex-col items-center">
+      <div id="ContactMe" className="pt-[80px] flex flex-col items-center">
          <h1 className="text-[30px] text-bold text-center pb-[10px]">
             Thank you for visiting my webpage!
          </h1>

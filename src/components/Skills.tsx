@@ -19,7 +19,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Skills() {
    return (
-      <div className="pt-[50px] flex flex-col">
+      <div id="Skills" className="pt-[80px] flex flex-col">
          <h1 className="text-[30px] text-bold text-center pb-[10px]">
             The Skills That I Can Offer
          </h1>

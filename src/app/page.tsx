@@ -13,7 +13,7 @@ import {
 
 export default function HomePage() {
    const [isOpen, setIsOpen] = useState(false);
-
+   // className={`${isOpen ? "h-screen w-screen overflow-hidden" : ""}`}
    return (
       <div>
          <SidebarReact isOpen={isOpen} setIsOpen={setIsOpen} />

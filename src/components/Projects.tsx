@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
    return (
-      <div className="pt-[50px] flex flex-col">
+      <div id="Projects" className="pt-[80px] flex flex-col">
          <h1 className="text-[30px] text-bold text-center pb-[10px]">
             My Personal Software Developer Projects
          </h1>

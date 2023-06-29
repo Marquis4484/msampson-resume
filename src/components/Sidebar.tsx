@@ -17,19 +17,15 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
    return (
       <div>
          <div
-            className={`${
-               isOpen
-                  ? "w-[190px] opacity-100"
-                  : "opacity-0 duration-300 text-[0px]"
-            } 
-          h-screen bg-[#3d3d3d] fixed flex items-center justify-center z-[2] duration-300 `}
+            className={`${isOpen ? " opacity-100" : "opacity-0"} 
+          h-screen bg-[#3d3d3d] fixed w-[190px] flex items-center justify-center z-[2] duration-300 `}
          >
             <ul>
                <li>
-                  <a href="#Intro">Home</a>
+                  <a href="#Home">Home</a>
                </li>
                <li>
-                  <a href="#AboutMe">About Me</a>
+                  <a href="#About">About</a>
                </li>
                <li>
                   <a href="#Skills">Skills</a>
@@ -37,23 +33,21 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
                <li>
                   <a href="#Projects">Projects</a>
                </li>
+
                <li>
-                  <a href="#Interests">Interests</a>
-               </li>
-               <li>
-                  <a href="#Contact">Contact</a>
+                  <a href="#ContactMe">ContactMe</a>
                </li>
             </ul>
          </div>
          <div
             className={`${
-               !isOpen ? "z-[-1] opacity-0" : "opacity-[0.4] duration-300"
-            } h-screen w-screen bg-[#000000]   fixed z-[1] duration-300 `}
+               isOpen ? "opacity-[0.4] z-[1]" : "z-[-1] opacity-0"
+            } h-screen w-screen bg-[#000000] fixed duration-[400ms] `}
          ></div>
          <button
             onClick={handleClose}
-            className={`${isOpen ? "block" : "hidden"} 
-            bg-[#A5A5A5] rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] z-[2]  `}
+            className={`${isOpen ? "opacity-100 z-[2]" : "opacity-0 z-[-1]"} 
+            bg-[#A5A5A5] rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] duration-300 `}
          >
             <XCircleIcon className="text-[50px] text-[#000000]" />
          </button>

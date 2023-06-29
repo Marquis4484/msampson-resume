@@ -3,7 +3,7 @@ import { ArrowPathIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
    return (
-      <div className="flex flex-col items-center">
+      <div id="Home" className="flex  flex-col items-center">
          <p className="font-light text-[28px] pt-[20px]">Hello, my name is</p>
          <h1 className="text-[30px] pb-[20px]">Marquis Sampson</h1>
          <hr className="w-[260px]  border-[1.5px] border-[#000000]" />
