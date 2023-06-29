@@ -15,8 +15,15 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
       console.log(isOpen);
    };
    return (
-      <div className={"" + (isOpen ? "block" : "hidden")}>
-         <div className="w-[190px] h-screen bg-[#3d3d3d] fixed flex items-center justify-center z-[2] animate-[fade]">
+      <div>
+         <div
+            className={`${
+               isOpen
+                  ? "w-[190px] opacity-100"
+                  : "opacity-0 duration-300 text-[0px]"
+            } 
+          h-screen bg-[#3d3d3d] fixed flex items-center justify-center z-[2] duration-300 `}
+         >
             <ul>
                <li>
                   <a href="#Intro">Home</a>
@@ -38,10 +45,15 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
                </li>
             </ul>
          </div>
-         <div className="h-screen w-screen bg-[#000000] opacity-[0.4] fixed z-[1]" />
+         <div
+            className={`${
+               !isOpen ? "z-[-1] opacity-0" : "opacity-[0.4] duration-300"
+            } h-screen w-screen bg-[#000000]   fixed z-[1] duration-300 `}
+         ></div>
          <button
             onClick={handleClose}
-            className="bg-[#A5A5A5] rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] z-[2]  "
+            className={`${isOpen ? "block" : "hidden"} 
+            bg-[#A5A5A5] rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] z-[2]  `}
          >
             <XCircleIcon className="text-[50px] text-[#000000]" />
          </button>
