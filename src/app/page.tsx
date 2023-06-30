@@ -19,7 +19,7 @@ export default function HomePage() {
          <SidebarReact isOpen={isOpen} setIsOpen={setIsOpen} />
          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
 
-         <div className="pt-[80px] px-[10px] z-[0]">
+         <div className=" px-[10px] z-[0]">
             <Home />
             <About />
             <Skills />

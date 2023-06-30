@@ -12,7 +12,6 @@ interface ChildProps {
 export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
    const handleClose = () => {
       setIsOpen(false);
-      console.log(isOpen);
    };
    return (
       <div>
@@ -40,6 +39,7 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
             </ul>
          </div>
          <div
+            onClick={handleClose}
             className={`${
                isOpen ? "opacity-[0.4] z-[1]" : "z-[-1] opacity-0"
             } h-screen w-screen bg-[#000000] fixed duration-[400ms] `}

@@ -10,7 +10,6 @@ interface Nav {
 export default function Nav({ isOpen, setIsOpen }: Nav) {
    const handleOpen = () => {
       setIsOpen(true);
-      console.log(isOpen);
    };
 
    return (
