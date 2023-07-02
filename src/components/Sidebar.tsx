@@ -16,8 +16,8 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
    return (
       <div>
          <div
-            className={`${isOpen ? " opacity-100" : "opacity-0"} 
-          h-screen bg-[#3d3d3d] fixed w-[190px] flex items-center justify-center z-[2] duration-300 `}
+            className={`${isOpen ? "z-[2] opacity-100" : "z-[-1] opacity-0"} 
+          h-screen bg-[#3d3d3d] fixed w-[190px] flex items-center justify-center  duration-300 `}
          >
             <ul>
                <li>
