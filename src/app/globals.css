@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-   html {
-      color-scheme: dark;
-   }
-   body {
-      color: white;
-      background: black;
-   }
-}
-
-:root {
-   --primary: theme("colors.blue.300");
-   --primary-focus: theme("colors.gray.50");
-
-   --secondary: theme("colors.gray.900");
-
-   --accent: theme("colors.blue.500");
-}
-
 [data-theme="dark"] {
    --primary: theme("colors.black");
    --primary-focus: theme("colors.gray.800");
@@ -33,7 +14,7 @@
 [data-theme="gruvbox"] {
    --primary: #3c3d3e;
 
-   --secondary: theme("colors.gray.300");
+   --secondary: "colors.gray.300";
 
    --accent: #cc4f22;
 }

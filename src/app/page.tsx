@@ -10,8 +10,7 @@ import {
    Footer,
    SidebarReact,
 } from "@/components";
-import { ThemeProvider, useTheme } from "next-themes";
-import "./globals.css";
+import { useTheme } from "next-themes";
 
 export default function HomePage() {
    const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +24,11 @@ export default function HomePage() {
    ];
 
    return (
-      <ThemeProvider>
-         <div>
+      <div>
+         <SidebarReact isOpen={isOpen} setIsOpen={setIsOpen} />
+         <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
+         <div className=" px-[10px] z-[0] bg-th-primary">
+            <Home />{" "}
             <select
                name="theme"
                id="theme-select"
@@ -44,17 +46,12 @@ export default function HomePage() {
                   </option>
                ))}
             </select>
-            <SidebarReact isOpen={isOpen} setIsOpen={setIsOpen} />
-            <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-            <div className=" px-[10px] z-[0] bg-th-accent">
-               <Home />
-               <About />
-               <Skills />
-               <Projects />
-               <ContactMe />
-            </div>
-            <Footer />
+            <About />
+            <Skills />
+            <Projects />
+            <ContactMe />
          </div>
-      </ThemeProvider>
+         <Footer />
+      </div>
    );
 }
