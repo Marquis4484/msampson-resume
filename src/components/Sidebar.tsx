@@ -43,7 +43,7 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
             className={`${
                isOpen ? "opacity-[0.4] z-[1]" : "z-[-1] opacity-0"
             } h-screen w-screen bg-[#000000] fixed duration-[400ms] `}
-         ></div>
+         />
          <button
             onClick={handleClose}
             className={`${isOpen ? "opacity-100 z-[2]" : "opacity-0 z-[-1]"} 
