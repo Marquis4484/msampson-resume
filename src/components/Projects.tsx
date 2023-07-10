@@ -71,7 +71,7 @@ export default function Projects() {
             </div>
          </div>
          <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-            <div className="lg:w-2/3 w-[240px] z-[-2]">
+            {/* <div className="lg:w-2/3 w-[240px] z-[-2]">
                <Swiper
                   slidesPerView={1.2}
                   spaceBetween={20}
@@ -113,7 +113,7 @@ export default function Projects() {
                      </SwiperSlide>
                   ))}
                </Swiper>
-            </div>
+            </div> */}
             <div className="lg:block hidden"></div>
          </div>
          <p className="p-[20px]">
