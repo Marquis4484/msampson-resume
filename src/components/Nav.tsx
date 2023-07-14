@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
 interface Nav {
@@ -8,6 +8,43 @@ interface Nav {
 }
 
 export default function Nav({ isOpen, setIsOpen }: Nav) {
+   const [activeSection, setActiveSection] = useState(null);
+   const sections = useRef([]);
+
+   const handleScroll = () => {
+      const pageYOffset = window.scroll;
+      let newActiveSection = null;
+
+      sections.current.forEach((section) => {
+         const sectionOffsetTop = (section as any).offsetTop;
+         const sectionHeight = (section as any).offsetHeight;
+
+         if (
+            pageYOffset >= sectionOffsetTop &&
+            pageYOffset < sectionOffsetTop + sectionHeight
+         ) {
+            newActiveSection = (section as any).id;
+         }
+      });
+
+      setActiveSection(newActiveSection);
+   };
+
+   useEffect(() => {
+      (sections as any).current = document.querySelectorAll("[data-section]");
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+         window.removeEventListener("scroll", handleScroll);
+      };
+   }, []);
+
+   const activeStyle = {
+      fontWeight: "bold",
+      color: "red",
+      textDecoration: "underline",
+   };
+
    const handleOpen = () => {
       setIsOpen(true);
    };
@@ -22,13 +59,30 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
                MS
             </div>
          </div>
+         <nav className="phone:hidden laptop:block px-4">
+            <a className="px-4 text-xl" href="#Home">
+               Home
+            </a>
 
-         <button className="flex flex-row">
+            <a className="px-4 text-xl" href="#About">
+               About
+            </a>
+
+            <a className="px-4 text-xl" href="#Skills">
+               Skills
+            </a>
+
+            <a className="px-4 text-xl" href="#Projects">
+               Projects
+            </a>
+
+            <a className="px-4 text-xl" href="#ContactMe">
+               ContactMe
+            </a>
+         </nav>
+
+         <button className="flex flex-row laptop:hidden">
             <Bars3Icon className="h-[52px] w-[66px]" onClick={handleOpen} />
-            {/* <div>Home</div>
-            <div>About</div>
-            <div>Skills</div>
-            <div>Projects</div> */}
          </button>
       </div>
    );
