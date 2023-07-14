@@ -136,7 +136,7 @@ export default function Projects() {
                >
                   {projects.map((project_info, i) => (
                      <SwiperSlide key={i}>
-                        <div className="h-fit w-full p-4 bg-slate-700 rounded-[50px]">
+                        <div className="h-[400px] w-fit p-4 bg-slate-700 rounded-[50px]">
                            <h3 className="text-xl my-4">{project_info.name}</h3>
                            <Image
                               src={project_info.img}
