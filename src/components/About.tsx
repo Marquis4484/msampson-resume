@@ -8,7 +8,7 @@ export default function About() {
          <h1 className="phone:text-[30px] tablet:text-[40px] text-bold text-center pb-[10px]">
             A Bit About Myself
          </h1>
-         <div className="flex flex-row tablet:pt-[50px]">
+         <div className="flex tablet:flex-row phone:flex-col tablet:pt-[50px]">
             <Image
                alt="Headshot"
                src={Headshot}

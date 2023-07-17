@@ -8,43 +8,6 @@ interface Nav {
 }
 
 export default function Nav({ isOpen, setIsOpen }: Nav) {
-   const [activeSection, setActiveSection] = useState(null);
-   const sections = useRef([]);
-
-   const handleScroll = () => {
-      const pageYOffset = window.scrollY;
-      let newActiveSection = null;
-
-      sections.current.forEach((section) => {
-         const sectionOffsetTop = (section as any).offsetTop;
-         const sectionHeight = (section as any).offsetHeight;
-
-         if (
-            pageYOffset >= sectionOffsetTop &&
-            pageYOffset < sectionOffsetTop + sectionHeight
-         ) {
-            newActiveSection = (section as any).id;
-         }
-      });
-
-      setActiveSection(newActiveSection);
-   };
-
-   useEffect(() => {
-      (sections as any).current = document.querySelectorAll("[data-section]");
-      window.addEventListener("scroll", handleScroll);
-      console.log(sections);
-      return () => {
-         window.removeEventListener("scroll", handleScroll);
-      };
-   }, []);
-
-   const activeStyle = {
-      fontWeight: "bold",
-      color: "red",
-      textDecoration: "underline",
-   };
-
    const handleOpen = () => {
       setIsOpen(true);
    };
@@ -60,51 +23,23 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
             </div>
          </div>
          <nav className="phone:hidden laptop:block px-4">
-            <a
-               href="#section1"
-               style={activeSection === "section1" ? activeStyle : {}}
-               className="px-4 text-xl"
-            >
+            <a href="#Home" className="px-4 text-2xl">
                Home
             </a>
 
-            <a
-               className="px-4 text-xl"
-               style={
-                  activeSection === "section2" ? activeStyle : { color: "blue" }
-               }
-               href="#section2"
-            >
+            <a className="px-4 text-2xl" href="#About">
                About
             </a>
 
-            <a
-               className="px-4 text-xl"
-               style={
-                  activeSection === "section3" ? activeStyle : { color: "blue" }
-               }
-               href="#section3"
-            >
+            <a className="px-4 text-2xl" href="#Skills">
                Skills
             </a>
 
-            <a
-               className="px-4 text-xl"
-               style={
-                  activeSection === "section4" ? activeStyle : { color: "blue" }
-               }
-               href="#section4"
-            >
+            <a className="px-4 text-2xl" href="#Projects">
                Projects
             </a>
 
-            <a
-               className="px-4 text-xl"
-               style={
-                  activeSection === "section5" ? activeStyle : { color: "blue" }
-               }
-               href="#section5"
-            >
+            <a className="px-4 text-2xl" href="#ContactMe">
                ContactMe
             </a>
          </nav>

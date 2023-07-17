@@ -19,22 +19,32 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
             className={`${isOpen ? "z-[2] opacity-100" : "z-[-1] opacity-0"} 
           h-screen bg-[#3d3d3d] fixed w-[190px] flex items-center justify-center  duration-300 `}
          >
-            <ul>
-               <li>
-                  <a href="#Home">Home</a>
+            <ul className="text-2xl py-3">
+               <li className="text-2xl py-3">
+                  <a onClick={() => setIsOpen(false)} href="#Home">
+                     Home
+                  </a>
                </li>
-               <li>
-                  <a href="#About">About</a>
+               <li className="text-2xl py-3">
+                  <a onClick={() => setIsOpen(false)} href="#About">
+                     About
+                  </a>
                </li>
-               <li>
-                  <a href="#Skills">Skills</a>
+               <li className="text-2xl py-3">
+                  <a onClick={() => setIsOpen(false)} href="#Skills">
+                     Skills
+                  </a>
                </li>
-               <li>
-                  <a href="#Projects">Projects</a>
+               <li className="text-2xl py-3">
+                  <a onClick={() => setIsOpen(false)} href="#Projects">
+                     Projects
+                  </a>
                </li>
 
-               <li>
-                  <a href="#ContactMe">ContactMe</a>
+               <li className="text-2xl py-3">
+                  <a onClick={() => setIsOpen(false)} href="#ContactMe">
+                     ContactMe
+                  </a>
                </li>
             </ul>
          </div>
