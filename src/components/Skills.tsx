@@ -4,7 +4,7 @@ import {
    SiRedux,
    SiTailwindcss,
    SiJavascript,
-   SiRuby,
+   SiRubyonrails,
    SiFirebase,
    SiVisualstudio,
    SiTypescript,
@@ -20,14 +20,14 @@ import { TbBrandNextjs } from "react-icons/tb";
 export default function Skills() {
    return (
       <div id="Skills" className="pt-[80px] flex flex-col">
-         <h1 className="text-[30px] text-bold text-center pb-[10px]">
+         <h1 className="text-[30px] text-bold text-center pb-[10px] font-semibold">
             The Skills That I Can Offer
          </h1>
-         <p className="px-[20px]">
+         <p className="px-[20px] text-[20px] text-center py-4 w-4/5 self-center">
             Here is a list of coding langauges, frameworks and libraries that
-            I&apos;ve worked with so far. Take a look!
+            I&apos;ve been using since I decided to study software development.
          </p>
-         <div className="flex flex-wrap items-center justify-center">
+         <div className="flex flex-wrap bg-[#A5A5A5] rounded-[50px] my-8 py-8 items-center justify-center self-center tablet:w-2/5">
             <div className="mx-[12px] flex flex-col items-center">
                <FaReact className="text-[50px]  text-blue-600" />
                <p>React</p>
@@ -73,8 +73,8 @@ export default function Skills() {
                <p>Firebase</p>
             </div>
             <div className="m-[12px] flex flex-col items-center">
-               <SiRuby className="text-[50px] text-blue-600" />
-               <p>Ruby</p>
+               <SiRubyonrails className="text-[50px] text-blue-600" />
+               <p>Ruby on Rails</p>
             </div>
             <div className="m-[12px] flex flex-col items-center">
                <DiSwift className="text-[50px]  text-blue-600" />

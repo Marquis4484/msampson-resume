@@ -15,7 +15,7 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
    return (
       <div
          className="flex flex-row justify-between items-center bg-[#E1E1E1] h-[80px] px-[20px] w-full fixed
-         drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]"
+         drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] z-[2]"
       >
          <div className="">
             <div className="text-[28px] border-2 border-[#243c5a] bg-white rounded-full p-2 ">

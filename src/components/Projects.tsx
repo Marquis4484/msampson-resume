@@ -15,14 +15,6 @@ import { XCircleIcon } from "@heroicons/react/24/solid";
 export default function Projects() {
    const [projectOpen, setProjectOpen] = useState(false);
 
-   const handleOpen = () => {
-      setProjectOpen(true);
-   };
-
-   const handleClose = () => {
-      setProjectOpen(false);
-   };
-
    const projects = [
       {
          img: project1,
@@ -59,121 +51,77 @@ export default function Projects() {
       {
          img: project5,
          name: "Blog Website",
-         github_link: "https://github.com/Sridhar-C-25",
-         live_link: "https://vuecountry05.netlify.app",
       },
    ];
    return (
       <div id="Projects" className="pt-[80px] flex flex-col">
-         <h1 className="text-[30px] text-bold text-center pb-[10px]">
-            My Personal Software Developer Projects
+         <h1 className="text-[30px] text-bold text-center pb-[10px] font-semibold">
+            My Personal Software Projects
          </h1>
-         <p className="text-center">
-            These are the most recent software development projects that I have
-            been experimenting with. Please, take a look!
-         </p>
-         <div>
-            <div
-               className={`${
-                  projectOpen ? "z-[4] opacity-100 " : " z-[-2] opacity-0  "
-               } " bg-[#D9D9D9] fixed py-[20px] px-[30px] rounded-[50px] text-center left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] w-[60%] h-[60%] duration-300 "`}
-            >
-               <h1>Your Message is Appreciated!</h1>
+         <div className="flex phone:flex-col tablet:flex-row">
+            <p className="text-center text-[20px] w-4/5 self-center py-8">
+               These are my most recent software development projects that I
+               have been working on. Each project is hosted on the internet so
+               that anyone can easily view them on their own device. Also, If
+               you would like to view the code to this project. There is a
+               github link down below that you can click on. Please, take a
+               look!
+            </p>
 
-               <p>
-                  It may take a while to respond to your message. Nevertheless,
-                  I will respond to your message as soon as possible!
-               </p>
-               {projects.map((project_info, i) => (
-                  <a
-                     key={i}
-                     href={project_info.live_link}
-                     target="_blank"
-                     className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+            <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
+               <div className=" phone:w-[240px] tablet:w-[400px]">
+                  <Swiper
+                     slidesPerView={1}
+                     spaceBetween={120}
+                     breakpoints={{
+                        640: {
+                           slidesPerView: 2,
+                        },
+                     }}
+                     loop={true}
+                     autoplay={{
+                        delay: 3000,
+                     }}
+                     pagination={{
+                        clickable: true,
+                     }}
+                     modules={[Pagination, Autoplay]}
                   >
-                     Live Demo
-                  </a>
-               ))}
-            </div>
-            <div
-               onClick={handleClose}
-               className={`${
-                  projectOpen
-                     ? "opacity-[0.4] z-[1] top-0 right-0 left-0 bottom-0 h-[100%]"
-                     : "z-[-1] opacity-0"
-               } h-screen w-screen bg-[#000000] fixed duration-[400ms] `}
-            />
-
-            <button
-               onClick={handleClose}
-               className={`${
-                  projectOpen ? "opacity-100 z-[2]" : "opacity-0 z-[-1]"
-               } 
-            bg-[#A5A5A5] rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] duration-300 `}
-            >
-               <XCircleIcon className="text-[50px] text-[#000000]" />
-            </button>
-         </div>
-         <div className="flex flex-col items-center"></div>
-         <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-            <div className="lg:w-2/3 w-[200px] z-[3]">
-               <Swiper
-                  slidesPerView={1}
-                  spaceBetween={20}
-                  breakpoints={{
-                     768: {
-                        slidesPerView: 2,
-                     },
-                  }}
-                  loop={true}
-                  autoplay={{
-                     delay: 3000,
-                  }}
-                  pagination={{
-                     clickable: true,
-                  }}
-                  modules={[Pagination, Autoplay]}
-               >
-                  {projects.map((project_info, i) => (
-                     <SwiperSlide key={i}>
-                        <div className="h-[400px] w-fit p-4 bg-slate-700 rounded-[50px]">
-                           <h3 className="text-xl my-4">{project_info.name}</h3>
-                           <Image
-                              src={project_info.img}
-                              alt={project_info.name}
-                              className="rounded-lg"
-                           />
-                           <p>{project_info.description}</p>
-                           <div className="flex gap-3">
-                              <a
-                                 href={project_info.github_link}
-                                 target="_blank"
-                                 className="text-cyan-600 bg-gray-800 px-1 py-1 inline-block"
-                              >
-                                 Github
-                              </a>
-                              <a
-                                 href={project_info.live_link}
-                                 target="_blank"
-                                 className="text-cyan-600 bg-gray-800 px-1 py-1 inline-block"
-                              >
-                                 Live Demo
-                              </a>
+                     {projects.map((project_info, i) => (
+                        <SwiperSlide key={i}>
+                           <div className="tablet:w-[400px] phone:w-[240px] p-8 bg-slate-700 h-fit rounded-[50px]">
+                              <h3 className="text-xl my-4 text-center">
+                                 {project_info.name}
+                              </h3>
+                              <Image
+                                 src={project_info.img}
+                                 alt={project_info.name}
+                                 className="rounded-lg"
+                              />
+                              <p>{project_info.description}</p>
+                              <div className="flex justify-around gap-3">
+                                 <a
+                                    href={project_info.github_link}
+                                    target="_blank"
+                                    className="text-cyan-600 bg-gray-800 px-1 py-1 inline-block"
+                                 >
+                                    Github
+                                 </a>
+                                 <a
+                                    href={project_info.live_link}
+                                    target="_blank"
+                                    className="text-cyan-600 bg-gray-800 px-1 py-1 inline-block"
+                                 >
+                                    Live Demo
+                                 </a>
+                              </div>
                            </div>
-                        </div>
-                     </SwiperSlide>
-                  ))}
-               </Swiper>
+                        </SwiperSlide>
+                     ))}
+                  </Swiper>
+               </div>
             </div>
-            <div className="lg:block hidden"></div>
          </div>
-         <p className="p-[20px]">
-            If you&apos;d like a professional list of what I can offer, please
-            download my resume by clicking the resume button down below!
-         </p>
-         <button className="bg-[#A5A5A5] rounded-[50px] p-[8px] self-center">
-            Resume!
-         </button>
       </div>
    );
 }

@@ -14,8 +14,8 @@ export default function ContactMe() {
    return (
       <>
          <ContactMeMessage message={message} setMessage={setMessage} />
-         <div id="ContactMe" className="pt-[80px] flex flex-col items-center">
-            <h1 className="text-[30px] text-bold text-center pb-[8px]">
+         <div id="ContactMe" className="pt-[80px] flex flex-col  items-center ">
+            <h1 className="text-[30px] text-bold text-center pb-[8px] font-semibold">
                Thank you for visiting my webpage!
             </h1>
             <p className="text-[20px] text-bold text-center pb-[5px]">

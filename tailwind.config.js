@@ -11,6 +11,13 @@ module.exports = {
    ],
    theme: {
       extend: {
+         keyframes: {
+            glowing: {
+               "0%": { backgroundPosition: "0 0" },
+               "50%": { backgroundPosition: "400% 0" },
+               "100%": { backgroundPosition: "0 0" },
+            },
+         },
          colors: {
             "th-primary": "var(--primary)",
             "th-primary-focus": "var(--primary-focus)",
