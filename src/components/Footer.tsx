@@ -12,21 +12,21 @@ export default function Footer() {
                target="_blank"
                rel="noopener noreferrer"
             >
-               <BsGithub className="text-[50px] mx-[12px] text-blue-600 hover:text-blue-800" />
+               <BsGithub className="text-[50px] mx-[12px] text-th-nav-link hover:text-th-button-highlight" />
             </a>
             <a
                href="https://www.linkedin.com/in/marquis-sampson/"
                target="_blank"
                rel="noopener noreferrer"
             >
-               <BsLinkedin className="mx-[12px] text-[50px]  text-blue-600 hover:text-blue-800" />
+               <BsLinkedin className="mx-[12px] text-[50px] text-th-nav-link hover:text-th-button-highlight" />
             </a>
 
             <a href="mailto:marquis4484@gmail.com">
-               <FaEnvelope className="mx-[12px] text-[50px]  text-blue-600 hover:text-blue-800" />
+               <FaEnvelope className="mx-[12px] text-[50px] text-th-nav-link hover:text-th-button-highlight" />
             </a>
          </div>
-         <span className="text-white text-center">
+         <span className="text-th-text-ms text-center">
             Copyright © 2022 Marquis Sampson. All Rights Reserved.
          </span>
       </div>

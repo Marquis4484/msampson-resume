@@ -17,31 +17,31 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
       <div>
          <div
             className={`${isOpen ? "z-[4] opacity-100" : "z-[-4] opacity-0"} 
-          h-screen bg-[#3d3d3d] fixed w-[190px] flex items-center justify-center  duration-300 `}
+          h-screen bg-th-content fixed w-[190px] flex items-center justify-center  duration-300 `}
          >
             <ul className="text-2xl py-3">
-               <li className="text-2xl py-3">
+               <li className="text-2xl text-th-text-ms hover:text-th-button-highlight py-3">
                   <a onClick={() => setIsOpen(false)} href="#Home">
                      Home
                   </a>
                </li>
-               <li className="text-2xl py-3">
+               <li className="text-2xl text-th-text-ms hover:text-th-button-highlight py-3">
                   <a onClick={() => setIsOpen(false)} href="#About">
                      About
                   </a>
                </li>
-               <li className="text-2xl py-3">
+               <li className="text-2xl text-th-text-ms hover:text-th-button-highlight py-3">
                   <a onClick={() => setIsOpen(false)} href="#Skills">
                      Skills
                   </a>
                </li>
-               <li className="text-2xl py-3">
+               <li className="text-2xl text-th-text-ms hover:text-th-button-highlight py-3">
                   <a onClick={() => setIsOpen(false)} href="#Projects">
                      Projects
                   </a>
                </li>
 
-               <li className="text-2xl py-3">
+               <li className="text-2xl text-th-text-ms hover:text-th-button-highlight py-3">
                   <a onClick={() => setIsOpen(false)} href="#ContactMe">
                      ContactMe
                   </a>
@@ -57,9 +57,9 @@ export default function Sidebar({ isOpen, setIsOpen }: ChildProps) {
          <button
             onClick={handleClose}
             className={`${isOpen ? "opacity-100 z-[4]" : "opacity-0 z-[-1]"} 
-            bg-[#A5A5A5] rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] duration-300 `}
+            bg-th-background hover:text-th-button-highlight  rounded-full h-[52px] w-[52px] fixed top-0 right-0 my-[19px] mx-[27px] duration-300 `}
          >
-            <XCircleIcon className="text-[50px] text-[#000000]" />
+            <XCircleIcon className="text-[50px] text-[#000000] text-th-button" />
          </button>
       </div>
    );

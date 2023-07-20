@@ -5,7 +5,7 @@ import Headshot from "public/assets/_MG_8534.jpg";
 export default function About() {
    return (
       <div id="About" className="pt-[80px]">
-         <h1 className="phone:text-[35px] tablet:text-[40px] font-semibold text-bold text-center pb-[10px]">
+         <h1 className="phone:text-[35px] text-th-text-ms tablet:text-[40px] font-semibold text-bold text-center pb-[10px]">
             A Bit About Myself
          </h1>
          <div className="flex tablet:flex-row phone:flex-col tablet:pt-[15px]">
@@ -17,10 +17,10 @@ export default function About() {
             />
 
             <div className="flex flex-col  py-6">
-               <h2 className="font-semibold px-[20px] text-[25px] text-center pb-[20px]">
+               <h2 className="font-semibold px-[20px] text-th-text-ms text-[25px] text-center pb-[20px]">
                   When it comes to my work ethic...
                </h2>
-               <p className="phone:px-[20px] tablet:mx-[50px] items-center text-[20px] self-center rounded-xl py-[10px] w-4/5 bg-[#D9D9D9] flex-2">
+               <p className="phone:px-[20px] tablet:mx-[50px] text-th-text-ms items-center text-[20px] self-center rounded-xl py-[10px] w-4/5 bg-th-content flex-2">
                   I am a hard-working individual with a tenacious attitude and
                   an eagerness to learn. Perseverance is what allows me to
                   continue to learn and grow within this field. Without these
@@ -32,7 +32,7 @@ export default function About() {
                   click on the button below. Otherwise, please have a look at
                   the rest of my website!
                </p>
-               <button className="bg-[#A5A5A5] rounded-[50px] my-[20px] p-[8px] self-center">
+               <button className="bg-th-button hover:bg-th-button-highlight rounded-[50px] my-[20px] p-[8px] text-th-text-ms self-center">
                   Resume!
                </button>
             </div>

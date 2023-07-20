@@ -10,7 +10,6 @@ import project4 from "public/assets/musicplayer.png";
 import project5 from "public/assets/ms-blog-posts.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { XCircleIcon } from "@heroicons/react/24/solid";
 
 export default function Projects() {
    const [projectOpen, setProjectOpen] = useState(false);
@@ -46,7 +45,7 @@ export default function Projects() {
          github_link: "https://github.com/Marquis4484/musicplayer",
          live_link: "https://ms-musicplayer.com",
          description:
-            "This is a small music player project created using JavaScript, HTML and CSS files. The various features on the music player are controlled by functions within the musicplayer.js file. The color changes with each song. The song files are stock audio from Adobe's stock audio website. The icons used in this project are imported from Font Awesome's website. My objective for this website was to understand how to play audio through a web application hosted on the internet. I also listen to music daily so I thought it would be fun to incorporate activities that I do in my daily life with my work. One of my hobbies is music creation and programming is another way that I can have fun showcasing it. It was a pleasure to work on this and I'd like to learn how to be more creative with JavaScript in the future.",
+            "This is a small music player project created using JavaScript, HTML and CSS files. The various features on the music player are controlled by functions within the musicplayer.js file. The song files are stock audio from Adobe's stock audio website. The icons used in this project are imported from Font Awesome's website. My objective for this website was to understand how to play audio through a web application hosted on the internet. I also listen to music daily so I thought it would be fun to incorporate activities that I do in my daily life with my work. One of my hobbies is music creation and programming is another way that I can have fun showcasing it. It was a pleasure to work on this and I'd like to learn how to be more creative with JavaScript in the future.",
       },
       {
          img: project5,
@@ -59,11 +58,11 @@ export default function Projects() {
    ];
    return (
       <div id="Projects" className="pt-[80px] flex flex-col">
-         <h1 className="text-[30px] text-bold text-center pb-[10px] font-semibold">
+         <h1 className="text-[30px] text-bold text-center pb-[10px] text-th-text-ms font-semibold">
             My Personal Software Projects
          </h1>
          <div className="flex phone:flex-col tablet:pt-5 tablet:flex-row">
-            <p className="text-center text-[20px]  rounded-xl bg-[#D9D9D9] self-center tablet:p-6 phone:my-8 phone:py-8 tablet:self-start laptop:self-center">
+            <p className="text-center text-[20px]  rounded-xl bg-th-content text-th-text-ms self-center tablet:p-6 phone:my-8 phone:p-6 tablet:self-start laptop:self-center">
                These are my most recent software development projects that I
                have been working on. Each project is hosted on the internet so
                that anyone can easily view them on their own device. Also, If
@@ -73,7 +72,7 @@ export default function Projects() {
             </p>
 
             <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-               <div className=" phone:w-[220px] tablet:w-[350px] laptop:w-[550px]">
+               <div className=" phone:w-[230px] tablet:w-[350px] laptop:w-[550px]">
                   <Swiper
                      slidesPerView={1}
                      spaceBetween={120}
@@ -88,14 +87,14 @@ export default function Projects() {
                   >
                      {projects.map((project_info, i) => (
                         <SwiperSlide key={i}>
-                           <div className="tablet:w-[350px] tablet:h-fit phone:h-[1730px] phone:w-[220px] laptop:w-[550px] p-6 bg-slate-700  rounded-[50px]">
+                           <div className="tablet:w-[350px] tablet:h-fit phone:h-[1740px] phone:w-[230px] laptop:w-[550px] p-6 bg-th-content text-th-text-ms rounded-[50px]">
                               <h3 className="text-xl my-4 text-center">
                                  {project_info.name}
                               </h3>
                               <Image
                                  src={project_info.img}
                                  alt={project_info.name}
-                                 className="rounded-lg py-5"
+                                 className="rounded-lg border-4 border-black my-5"
                               />
                               <p className="text-[20px]">
                                  {project_info.description}
@@ -104,7 +103,7 @@ export default function Projects() {
                                  <a
                                     href={project_info.github_link}
                                     target="_blank"
-                                    className="text-cyan-600 bg-gray-800 px-1 py-1 inline-block rounded-lg"
+                                    className="text-th-text-ms bg-th-button hover:bg-th-button-highlight px-1 py-1 inline-block rounded-lg"
                                  >
                                     Github
                                  </a>
@@ -112,7 +111,7 @@ export default function Projects() {
                                     <a
                                        href={project_info.live_link}
                                        target="_blank"
-                                       className="text-cyan-600 bg-gray-800 px-1 py-1 inline-block rounded-lg"
+                                       className="text-th-text-ms bg-th-button hover:bg-th-button-highlight px-1 py-1 inline-block rounded-lg"
                                     >
                                        Live Demo
                                     </a>

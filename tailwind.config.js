@@ -9,25 +9,24 @@ module.exports = {
       "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
       "./src/**/*.{js,jsx,ts,tsx}",
    ],
+
    theme: {
       extend: {
-         keyframes: {
-            glowing: {
-               "0%": { backgroundPosition: "0 0" },
-               "50%": { backgroundPosition: "400% 0" },
-               "100%": { backgroundPosition: "0 0" },
-            },
-         },
          colors: {
             "th-primary": "var(--primary)",
             "th-primary-focus": "var(--primary-focus)",
-            "th-secodary": "var(--secondary)",
+            "th-secondary": "var(--secondary)",
             "th-accent": "var(--accent)",
+            "th-text-ms": "var(--text-ms)",
+            "th-background": "var(--background)",
+            "th-nav-link": "var(--nav-link)",
+            "th-desc": "var(--desc)",
+            "th-content": "var(--content)",
+            "th-button": "var(--button)",
+            "th-sidebar": "var(--sidebar)",
+            "th-button-highlight": "var(--button-highlight)",
          },
       },
-   },
-
-   theme: {
       screens: {
          phone: "280px",
          // => @media (min-width: 400px) { ... }
