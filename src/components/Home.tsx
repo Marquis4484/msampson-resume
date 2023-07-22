@@ -1,7 +1,32 @@
 import React from "react";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
+import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+   const [mounted, setMounted] = useState(false);
+   const { theme, setTheme } = useTheme();
+   const [themeIdx, setThemeIdx] = useState(0);
+   // or change this in your useTheme hook
+
+   const themes = [
+      { name: "Normal" },
+      { name: "Dark" },
+      { name: "Forrest" },
+      { name: "Pink" },
+      { name: "Sky" },
+      { name: "Strawberry" },
+   ];
+
+   const handleColorChange = (e: any) => {
+      setTheme(themes[themeIdx].name.toLowerCase());
+      setThemeIdx((themeIdx + 1) % themes.length);
+      console.log(themes.length);
+   };
+
+   useEffect(() => setMounted(true), []);
+
+   if (!mounted) return null;
    return (
       <div
          id="Home"
@@ -27,9 +52,33 @@ export default function Home() {
             <p className=" py-[5px] px-[30px] text-center laptop:py-[30px] text-th-text-ms">
                Hit This Button!
             </p>
-            <button className="bg-th-button text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight">
+            <button
+               value={theme}
+               onClick={handleColorChange}
+               className="bg-th-button text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+            >
                <ArrowPathIcon />
             </button>
+            <span className="p-1 sm:px-3 sm:py-2 text-th-secondary">
+               Current theme: {mounted && theme}
+            </span>
+            {/* <select
+               name="theme"
+               id="theme-select"
+               className="bg-white text-gray-800 border-gray-800 border py-1 px-3"
+               onChange={(e) => setTheme(e.currentTarget.value)}
+               value={theme}
+            >
+               <option value="system">System</option>
+               {themes.map((t) => (
+                  <option
+                     key={t.name.toLowerCase()}
+                     value={t.name.toLowerCase()}
+                  >
+                     {t.name}
+                  </option>
+               ))}
+            </select> */}
          </div>
       </div>
    );
