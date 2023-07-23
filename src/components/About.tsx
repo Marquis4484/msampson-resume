@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Headshot from "public/assets/_MG_8534.jpg";
+import Link from "next/link";
 
 export default function About() {
    return (
@@ -22,19 +23,16 @@ export default function About() {
                </h2>
                <p className="phone:px-[20px] tablet:mx-[50px] text-th-text-ms items-center text-[20px] self-center rounded-xl py-[10px] w-4/5 bg-th-content flex-2">
                   I am a hard-working individual with a tenacious attitude and
-                  an eagerness to learn. Perseverance is what allows me to
-                  continue to learn and grow within this field. Without these
-                  traits, I would not be able to thrive as a software engineer.
-                  If I were to work alongside your company, I would bring
-                  nothing but positive energy and creative solutions to your
-                  team&apos;s workflow. Please, consider me for whatever project
-                  you have in mind. Also, if you would like a copy of my resume
-                  click on the button below. Otherwise, please have a look at
-                  the rest of my website!
+                  an eagerness to learn. Perseverance is what allows me to learn
+                  and grow within this field. Without these traits, I would not
+                  be able to thrive as a software engineer. If I were to work
+                  alongside your company, I would bring nothing but positive
+                  energy and creative solutions to your team&apos;s workflow.
+                  Please, consider me for whatever project you have in mind.
+                  Also, if you would like to download a copy of my resume click
+                  on the button below. Otherwise, please enjoy looking at the
+                  rest of my website!
                </p>
-               <button className="bg-th-button hover:bg-th-button-highlight rounded-[50px] my-[20px] p-[8px] text-th-text-ms self-center">
-                  Resume!
-               </button>
             </div>
          </div>
       </div>

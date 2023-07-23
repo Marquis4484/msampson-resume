@@ -13,15 +13,19 @@ export default function Home() {
       { name: "Normal" },
       { name: "Dark" },
       { name: "Forrest" },
-      { name: "Pink" },
       { name: "Sky" },
       { name: "Strawberry" },
+      { name: "Normal" },
    ];
 
    const handleColorChange = (e: any) => {
-      setTheme(themes[themeIdx].name.toLowerCase());
-      setThemeIdx((themeIdx + 1) % themes.length);
-      console.log(themes.length);
+      if (themeIdx === 0) {
+         setTheme(themes[themeIdx + 1].name.toLowerCase());
+         setThemeIdx((themeIdx + 1) % themes.length);
+      } else {
+         setTheme(themes[themeIdx].name.toLowerCase());
+         setThemeIdx((themeIdx + 1) % themes.length);
+      }
    };
 
    useEffect(() => setMounted(true), []);
@@ -59,26 +63,6 @@ export default function Home() {
             >
                <ArrowPathIcon />
             </button>
-            <span className="p-1 sm:px-3 sm:py-2 text-th-secondary">
-               Current theme: {mounted && theme}
-            </span>
-            {/* <select
-               name="theme"
-               id="theme-select"
-               className="bg-white text-gray-800 border-gray-800 border py-1 px-3"
-               onChange={(e) => setTheme(e.currentTarget.value)}
-               value={theme}
-            >
-               <option value="system">System</option>
-               {themes.map((t) => (
-                  <option
-                     key={t.name.toLowerCase()}
-                     value={t.name.toLowerCase()}
-                  >
-                     {t.name}
-                  </option>
-               ))}
-            </select> */}
          </div>
       </div>
    );

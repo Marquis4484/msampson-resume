@@ -17,13 +17,18 @@ function ContactMeMessage({ message, setMessage }: ContactMeValues) {
          <div
             className={`${
                message ? "z-[5] opacity-100 " : " z-[-4] opacity-0  "
-            } " bg-th-content fixed py-[20px] px-[30px] rounded-[50px] text-center left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] w-[60%] h-[60%] duration-300 "`}
+            } " bg-th-content flex flex-col fixed py-[20px] px-[30px] rounded-[50px] text-center left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] w-[60%] h-[60%] duration-300 "`}
          >
-            <h1 className="text-th-text-ms">Your Message is Appreciated!</h1>
+            <h1 className="text-th-text-ms font-bold phone:text-[22px] tablet:text-[25px] pb-[24px]">
+               Your Message is Appreciated!
+            </h1>
 
-            <p className="text-th-text-ms">
-               It may take a while to respond to your message. Nevertheless, I
-               will respond to your message as soon as possible!
+            <p
+               className="text-th-text-ms tablet:place-self-center
+             phone:text-[12px] tablet:text-[18px] "
+            >
+               It may some time to respond to your message. Nevertheless, I will
+               get back to you as soon as I can!
             </p>
          </div>
          <div

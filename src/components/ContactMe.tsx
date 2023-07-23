@@ -47,14 +47,14 @@ export default function ContactMe() {
                <input
                   type="email"
                   placeholder="Email"
-                  className="bg-th-text-ms w-[260px] my-[20px] "
+                  className="bg-gray-200 w-[260px] my-[20px] "
                   name="email"
                   required
                />
 
                <textarea
                   placeholder="Leave a quick Message"
-                  className="bg-th-text-ms h-[280px] w-[260px]"
+                  className="bg-gray-200 h-[280px] w-[260px]"
                   required
                   name="message"
                ></textarea>

@@ -18,7 +18,7 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
          drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] z-[2]"
       >
          <div className="">
-            <div className="text-[28px] border-2 border-black bg-th-text-ms rounded-full p-2 ">
+            <div className="text-[28px] border-2 border-th-text-ms bg-white text-black rounded-full p-2 ">
                MS
             </div>
          </div>
