@@ -10,7 +10,6 @@ export default function Home() {
    // or change this in your useTheme hook
 
    const themes = [
-      { name: "Normal" },
       { name: "Dark" },
       { name: "Forrest" },
       { name: "Sky" },
@@ -19,13 +18,8 @@ export default function Home() {
    ];
 
    const handleColorChange = (e: any) => {
-      if (themeIdx === 0) {
-         setTheme(themes[themeIdx + 1].name.toLowerCase());
-         setThemeIdx((themeIdx + 1) % themes.length);
-      } else {
-         setTheme(themes[themeIdx].name.toLowerCase());
-         setThemeIdx((themeIdx + 1) % themes.length);
-      }
+      setTheme(themes[themeIdx].name.toLowerCase());
+      setThemeIdx((themeIdx + 1) % themes.length);
    };
 
    useEffect(() => setMounted(true), []);

@@ -9,6 +9,20 @@
    --secondary: #f986c2;
 
    --accent: #f986c2;
+   --primary: #402f4b;
+   --primary-focus: #1a1320;
+
+   --secondary: #dfbbf7;
+   --accent: #eca2a2;
+
+   --text-ms: #000000;
+   --background: #ffffff;
+   --nav-link: #adadad;
+   --desc: #7b7b7b;
+   --content: #a3a3a3;
+   --button: #919191;
+   --sidebar: #3b3b3b;
+   --button-highlight: #2f2f2f;
 }
 
 [data-theme="dark"] {
