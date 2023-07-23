@@ -29,10 +29,18 @@ export default function About() {
                   alongside your company, I would bring nothing but positive
                   energy and creative solutions to your team&apos;s workflow.
                   Please, consider me for whatever project you have in mind.
-                  Also, if you would like to download a copy of my resume click
-                  on the button below. Otherwise, please enjoy looking at the
-                  rest of my website!
+                  Also, if you would like to view a copy of my resume, click on
+                  the button below. Otherwise, please enjoy looking at the rest
+                  of my website!
                </p>
+               <Link
+                  href={"MarquisSResume.pdf"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-th-button hover:bg-th-button-highlight rounded-[50px] my-[20px] p-[8px] text-th-text-ms self-center"
+               >
+                  Resume!
+               </Link>
             </div>
          </div>
       </div>

@@ -51,7 +51,7 @@ export default function Home() {
          </div>
          <div className="flex flex-col items-center  tablet:text-[33px] phone:text-[28px] laptop:text-[45px] flex-1">
             <p className=" px-[15px]  py-[10px] phone:w-4/5 text-center laptop:py-[50px] text-th-text-ms">
-               While reading through this webpage, please feel free to...
+               Before reading through this webpage, please feel free to...
             </p>
             <p className=" py-[5px] px-[30px] text-center laptop:py-[30px] text-th-text-ms">
                Hit This Button!

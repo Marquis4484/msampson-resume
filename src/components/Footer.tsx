@@ -26,7 +26,7 @@ export default function Footer() {
                <FaEnvelope className="mx-[12px] text-[50px] text-th-nav-link hover:text-th-button-highlight" />
             </a>
          </div>
-         <span className="text-th-text-ms text-center">
+         <span className="text-white text-center">
             Copyright © 2022 Marquis Sampson. All Rights Reserved.
          </span>
       </div>

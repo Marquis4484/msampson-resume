@@ -10,22 +10,22 @@ export default function ContactMe() {
       e.preventDefault();
       setMessage(true);
 
-      // emailjs
-      //    .sendForm(
-      //       "service_dle6ypi",
-      //       "template_bz1mcpf",
-      //       form.current,
-      //       "fqdPTTgbc-SvBi8d_"
-      //    )
-      //    .then(
-      //       (result) => {
-      //          console.log(result.text);
-      //       },
-      //       (error) => {
-      //          console.log(error.text);
-      //       }
-      //    );
-      // e.target.reset;
+      emailjs
+         .sendForm(
+            process.env.NEXT_PUBLIC_YOUR_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID!,
+            form.current,
+            process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY
+         )
+         .then(
+            (result) => {
+               console.log(result.text);
+            },
+            (error) => {
+               console.log(error.text);
+            }
+         );
+      e.target.reset;
    };
 
    return (
