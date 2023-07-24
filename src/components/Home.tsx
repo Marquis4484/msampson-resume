@@ -20,6 +20,7 @@ export default function Home() {
    const handleColorChange = (e: any) => {
       setTheme(themes[themeIdx].name.toLowerCase());
       setThemeIdx((themeIdx + 1) % themes.length);
+      console.log(process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY);
    };
 
    useEffect(() => setMounted(true), []);
