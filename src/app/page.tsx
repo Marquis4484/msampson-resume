@@ -19,8 +19,9 @@ export default function HomePage() {
    return (
       <div>
          <SidebarReact isOpen={isOpen} setIsOpen={setIsOpen} />
+
          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-         <div className=" px-[10px] z-[0] bg-th-background">
+         <div className="duration-300 px-[10px] z-[0] bg-th-background">
             <Home />
 
             <About />
@@ -28,6 +29,7 @@ export default function HomePage() {
             <Projects />
             <ContactMe />
          </div>
+
          <Footer />
       </div>
    );
