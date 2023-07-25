@@ -53,7 +53,7 @@ export default function Home() {
             <button
                value={theme}
                onClick={handleColorChange}
-               className="bg-th-button text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+               className="gradient-45 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
             >
                <ArrowPathIcon />
             </button>
