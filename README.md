@@ -1,34 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marquis Sampson Web Portfolio
 
-## Getting Started
+<img width="1280" alt="Screen Shot 2023-07-24 at 1 12 08 PM" src="https://github.com/Marquis4484/msampson-resume/assets/39504475/15597238-8cda-41b9-9e60-76bc72c9a0b4">
 
-First, run the development server:
+## A Website The Features Myself
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This application contains links to all of the most recent software engineering projects that I've been working on to improve as a software engineer. In addition, it contains an About section, a Contact section, a list of relevant software engineering skills that I possess, and link to all of my socials. This responsive website also features a theme changer so that the user can choose how to view the website on their own personal device.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Purpose of this Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This website represents a lot of what I've learned while studying to become a software engineer. I wanted to create something looks good while being fundamentally different from other websites.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Thank you for viewing my Web Portfolio!
