@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* initial theme for browser */
 :root {
    --primary: #237748;
    --primary-focus: #f986c2;
