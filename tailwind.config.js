@@ -13,7 +13,7 @@ module.exports = {
    theme: {
       extend: {
          animation: {
-            "color-glow": "glowing 20s linear infinite;",
+            glowing: "glowing 20s linear infinite",
          },
          backgroundImage: {
             "gradient-45":

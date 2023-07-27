@@ -53,7 +53,7 @@ export default function Home() {
             <button
                value={theme}
                onClick={handleColorChange}
-               className="gradient-45 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+               className="before:bg-gradient-45 before:absolute before:top-[-2px] before:left-[-2px] before:bg-[length:400%]  before:content-none before:z-[-1] before:blur-[5px] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] active:bg-transparent bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
             >
                <ArrowPathIcon />
             </button>
