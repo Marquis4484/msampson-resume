@@ -22,13 +22,10 @@ export default function Home() {
       setThemeIdx((themeIdx + 1) % themes.length);
    };
 
-   useEffect(() => setMounted(true), []);
-
-   if (!mounted) return null;
    return (
       <div
          id="Home"
-         className="flex  pt-[80px] tablet:flex-row phone:flex-col items-center"
+         className="flex h-screen duration-300 bg-th-background pt-[80px] tablet:flex-row phone:flex-col items-center"
       >
          <div className="flex flex-col items-center phone:text-[28px] tablet:text-[36px] laptop:text-[50px] flex-1">
             <p className="font-light text-th-text-ms  pt-[20px] laptop:py-[30px]">

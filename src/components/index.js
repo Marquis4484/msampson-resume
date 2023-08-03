@@ -5,4 +5,5 @@ export { default as Projects } from "./Projects";
 export { default as ContactMe } from "./ContactMe";
 export { default as About } from "./About";
 export { default as Footer } from "./Footer";
-export { default as SidebarReact } from "./Sidebar";
+export { default as Sidebar } from "./Sidebar";
+export { default as ContactMeMessage } from "./ContactMeMessage";
