@@ -9,7 +9,6 @@ export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [themeIdx, setThemeIdx] = useState(0);
-  // or change this in your useTheme hook
 
   const themes = [
     { name: "Dark" },
