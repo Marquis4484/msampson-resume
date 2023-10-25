@@ -3,7 +3,7 @@ import { ArrowPathIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import HeadshotH from "public/assets/HomeImageF.jpg";
+import HeadshotH from "public/assets/CityPhoto.jpg";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -28,7 +28,12 @@ export default function Home() {
       id="Home"
       className="flex h-screen duration-300 bg-th-background pt-[80px] tablet:flex-row phone:flex-col items-center"
     >
-      <Image alt="Headshot Photo" quality={100} src={HeadshotH}></Image>
+      <Image
+        alt="Headshot Photo"
+        className="w-[260px] h-[400px]"
+        quality={100}
+        src={HeadshotH}
+      ></Image>
       <div className="flex flex-col items-center phone:text-[28px] tablet:text-[36px] laptop:text-[50px] flex-1">
         <p className="font-light text-th-text-ms  pt-[20px] laptop:py-[30px]">
           Hello, my name is
@@ -52,7 +57,7 @@ export default function Home() {
         <button
           value={theme}
           onClick={handleColorChange}
-          className=" before:absolute before:top-[-2px] before:left-[-2px] before:bg-[length:400%]  before:content-none before:z-[-1] before:blur-[5px] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:animate-[glowing_20s_linear_infinite] before:opacity-0 before:rounded-[10px] after:z-[-1] after:content-none after:absolute after:w-[100%] after:h-[100%] after:bg-black after:left-0 after:top-0 after:rounded-[10px] active:bg-transparent bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+          className="cursor-pointer duration-200 hover:scale-125 active:scale-100 before:absolute before:top-[-2px] before:left-[-2px] before:bg-[length:400%]  before:content-none before:z-[-1] before:blur-[5px] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:animate-[glowing_20s_linear_infinite] before:opacity-0 before:rounded-[10px] after:z-[-1] after:content-none after:absolute after:w-[100%] after:h-[100%] after:bg-black after:left-0 after:top-0 after:rounded-[10px] active:bg-transparent bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
         >
           <ArrowPathIcon />
         </button>
