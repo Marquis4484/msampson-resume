@@ -35,7 +35,7 @@ export default function Home() {
         src={HeadshotH}
       ></Image>
       <div className="flex flex-col items-center phone:text-[28px] tablet:text-[36px] laptop:text-[50px] flex-1">
-        <p className="font-light text-th-text-ms  pt-[20px] laptop:py-[30px]">
+        <p className="font-light  text-th-text-ms  pt-[20px] laptop:py-[30px]">
           Hello, my name is
         </p>
         <h1 className="text-th-text-ms pb-[20px]">Marquis Sampson</h1>
@@ -57,7 +57,7 @@ export default function Home() {
         <button
           value={theme}
           onClick={handleColorChange}
-          className="cursor-pointer duration-200 hover:scale-125 active:scale-100 before:absolute before:top-[-2px] before:left-[-2px] before:bg-[length:400%]  before:content-none before:z-[-1] before:blur-[5px] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:animate-[glowing_20s_linear_infinite] before:opacity-0 before:rounded-[10px] after:z-[-1] after:content-none after:absolute after:w-[100%] after:h-[100%] after:bg-black after:left-0 after:top-0 after:rounded-[10px] active:bg-transparent bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+          className="cursor-pointer duration-200 hover:scale-125 active:scale-100 before:absolute before:top-[-2px] before:left-[-2px] before:bg-[length:400%]  before:content-none before:z-[-1] before:blur-[5px] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:animate-[glowing_20s_linear_infinite] before:opacity-0 before:rounded-[10px] after:z-[-1] after:content-none after:absolute after:w-[100%] after:h-[100%] after:bg-black after:left-0 after:top-0 after:rounded-[10px] active:rotate-180 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
         >
           <ArrowPathIcon />
         </button>
