@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import HeadshotH from "public/assets/CityPhoto.jpg";
 
-// Home Page 
+// Home Page
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -53,7 +53,7 @@ export default function Home() {
         <button
           value={theme}
           onClick={handleColorChange}
-          className="cursor-pointer duration-200 hover:scale-125 active:scale-100  active:rotate-180 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+          className="cursor-pointer duration-200 hover:scale-125 active:scale-100  active:rotate-180 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 m-4 hover:bg-th-button-highlight"
         >
           <ArrowPathIcon />
         </button>

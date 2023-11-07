@@ -38,7 +38,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="bg-th-button hover:bg-th-button-highlight duration-200 active:text-th-button-highlight rounded-[50px] my-[20px] p-[8px] text-th-text-ms self-center"
           >
-            Resume!
+            Resume
           </Link>
         </div>
       </div>
