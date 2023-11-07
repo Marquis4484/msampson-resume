@@ -6,14 +6,14 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className=" h-screen duration-300 bg-th-background  pt-[80px]">
-      <h1 className="phone:text-[35px] text-th-text-ms tablet:text-[40px] font-semibold text-bold text-center pb-[10px]">
+      <h1 className=" text-th-text-ms text-[50px]  text-bold text-center p-[20px]  font-black">
         A Bit About Myself
       </h1>
       <div className="flex tablet:flex-row phone:flex-col tablet:pt-[15px]">
         <Image
           alt="Headshot"
           src={Headshot}
-          className="phone:w-[200px] phone:h-[300px] tablet:w-[300px] tablet:h-[400px] flex-1 rounded-lg self-center
+          className=" m-[50px] phone:w-[200px] phone:h-[300px] tablet:w-[300px] tablet:h-[400px] flex-1 rounded-lg self-center
                     shadow-[12px_12px_2px_1px_rgba(99,99,99,1)]"
         />
 
@@ -30,13 +30,13 @@ export default function About() {
             solutions to your team&apos;s workflow. Please, consider me for
             whatever project you have in mind. Also, if you would like to view a
             copy of my resume, click on the button below. Otherwise, please
-            enjoy looking at the rest of my website!
+            enjoy viewing the rest of my website!
           </p>
           <Link
             href={"Online Copy of MarquisS Resume .pdf"}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-th-button hover:bg-th-button-highlight rounded-[50px] my-[20px] p-[8px] text-th-text-ms self-center"
+            className="bg-th-button hover:bg-th-button-highlight duration-200 active:text-th-button-highlight rounded-[50px] my-[20px] p-[8px] text-th-text-ms self-center"
           >
             Resume!
           </Link>
