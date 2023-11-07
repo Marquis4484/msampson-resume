@@ -11,27 +11,27 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
 const roboto = Roboto({
-   subsets: ["latin"],
-   weight: ["400"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export default function RootLayout({
-   children,
+  children,
 }: {
-   children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-   const [isOpen, setIsOpen] = useState(false);
-   return (
-      <html lang="en" suppressHydrationWarning={true}>
-         <body className={`${roboto.className} ${caveat.variable} font-sans`}>
-            <Providers>
-               <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <html lang="en" suppressHydrationWarning={true}>
+      <body>
+        <Providers>
+          <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 
-               <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-               {children}
-               <Footer />
-            </Providers>
-         </body>
-      </html>
-   );
+          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
+          {children}
+          <Footer />
+        </Providers>
+      </body>
+    </html>
+  );
 }
