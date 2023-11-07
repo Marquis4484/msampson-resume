@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div
       id="Home"
-      className="flex h-screen duration-300 bg-th-background pt-[80px] tablet:flex-row phone:flex-col items-center"
+      className="flex phone:h-fit laptop:h-screen duration-300 bg-th-background pt-[80px] tablet:flex-row phone:flex-col items-center"
     >
       <div className="flex flex-col items-center phone:text-[28px] tablet:text-[36px] laptop:text-[50px] flex-1">
         <p className="font-light  text-th-text-ms  pt-[20px] laptop:py-[30px]">
@@ -51,7 +51,7 @@ export default function Home() {
         <button
           value={theme}
           onClick={handleColorChange}
-          className="cursor-pointer duration-200 hover:scale-125 active:scale-100 active:rotate-180 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
+          className="cursor-pointer duration-200 hover:scale-125 active:scale-100  active:rotate-180 bg-th-button z-0 border-none outline-none text-th-text-ms rounded-full h-[70px] w-[70px] p-2 hover:bg-th-button-highlight"
         >
           <ArrowPathIcon />
         </button>

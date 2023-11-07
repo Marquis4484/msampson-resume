@@ -22,7 +22,7 @@ export default function Skills() {
   return (
     <div
       id="Skills"
-      className="pt-[80px] duration-300 bg-th-background h-screen flex flex-col"
+      className="pt-[80px] duration-300 bg-th-background phone:h-fit  flex flex-col"
     >
       <h1 className=" text-th-text-ms text-[50px]  text-bold text-center p-[20px]  font-black">
         The Skills That I Can Offer

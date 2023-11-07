@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className=" h-screen duration-300 bg-th-background  pt-[80px]">
+    <div className="phone:h-fit laptop:h-screen duration-300 bg-th-background  pt-[80px]">
       <h1 className=" text-th-text-ms text-[50px]  text-bold text-center p-[20px]  font-black">
-        A Bit About Myself
+        A Little Bit About Myself
       </h1>
       <div className="flex tablet:flex-row phone:flex-col tablet:pt-[15px]">
         <Image

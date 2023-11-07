@@ -58,12 +58,12 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="pt-[80px] h-screen duration-300 bg-th-background flex flex-col">
-      <h1 className="text-[50px]  text-center p-[20px] text-th-text-ms font-black">
+    <div className="pt-[80px] phone:h-fit laptop:h-screen duration-300 bg-th-background flex flex-col">
+      <h1 className="text-[50px]  text-center p-[20px] text-th-text-ms font-black ">
         My Personal Software Projects
       </h1>
-      <div className="flex phone:flex-col tablet:pt-5 tablet:flex-row ">
-        <p className="text-center text-[16px]  rounded-xl bg-th-content text-th-text-ms tablet:p-3 phone:my-8 phone:p-6 tablet:self-start laptop:self-center w-[400px]">
+      <div className="flex phone:flex-col tablet:pt-5 tablet:flex-row justify-evenly">
+        <p className="text-center text-[20px]  rounded-xl bg-th-content text-th-text-ms tablet:p-6 phone:my-8 phone:p-6 tablet:self-start phone:w-[200px] phone:self-center laptop:self-center tablet:w-[400px] laptop:w-[400px]">
           These are the most recent software development projects that I have
           been working on. Each project is hosted on the internet so that anyone
           can easily view them on their own device. Also, if you would like to
@@ -71,55 +71,53 @@ export default function Projects() {
           for each website. Please, take a look!
         </p>
 
-        <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-          <div className="cursor-pointer phone:w-[230px] tablet:w-[350px] laptop:w-[600px]">
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={120}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination, Autoplay]}
-            >
-              {projects.map((project_info, i) => (
-                <SwiperSlide key={i}>
-                  <div className="flex flex-col tablet:w-[250px] tablet:h-fit phone:h-[1740px] phone:w-[230px] laptop:w-[600px] p-6 bg-th-content text-th-text-ms rounded-[50px]">
-                    <h3 className="text-[25px]  text-center">
-                      {project_info.name}
-                    </h3>
-                    <Image
-                      src={project_info.img}
-                      alt={project_info.name}
-                      className="rounded-lg w-[250px] h-[150px] border-4 border-black my-5 self-center"
-                    />
-                    <p className="text-[15px]">{project_info.description}</p>
-                    <div className="flex justify-around py-4 gap-3">
+        <div className="cursor-pointer phone:w-[230px] tablet:w-[350px] laptop:w-[700px] phone:self-center ">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={120}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay]}
+          >
+            {projects.map((project_info, i) => (
+              <SwiperSlide key={i}>
+                <div className="flex flex-col tablet:w-[250px] tablet:h-fit  phone:w-[230px] laptop:w-[700px] p-6 bg-th-content text-th-text-ms rounded-[50px]">
+                  <h3 className="text-[25px]  text-center">
+                    {project_info.name}
+                  </h3>
+                  <Image
+                    src={project_info.img}
+                    alt={project_info.name}
+                    className="rounded-lg w-[250px] h-[155px] border-4 border-black my-5 self-center"
+                  />
+                  <p className="text-[15px]">{project_info.description}</p>
+                  <div className="flex justify-around py-4 gap-3">
+                    <a
+                      href={project_info.github_link}
+                      target="_blank"
+                      className="text-th-text-ms bg-th-button hover:bg-th-button-highlight px-1 py-1 inline-block  duration-200 active:text-th-button-highlight rounded-[50px]"
+                    >
+                      Github
+                    </a>
+                    {project_info.live_link && (
                       <a
-                        href={project_info.github_link}
+                        href={project_info.live_link}
                         target="_blank"
                         className="text-th-text-ms bg-th-button hover:bg-th-button-highlight px-1 py-1 inline-block  duration-200 active:text-th-button-highlight rounded-[50px]"
                       >
-                        Github
+                        Live Demo
                       </a>
-                      {project_info.live_link && (
-                        <a
-                          href={project_info.live_link}
-                          target="_blank"
-                          className="text-th-text-ms bg-th-button hover:bg-th-button-highlight px-1 py-1 inline-block  duration-200 active:text-th-button-highlight rounded-[50px]"
-                        >
-                          Live Demo
-                        </a>
-                      )}
-                    </div>
+                    )}
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
