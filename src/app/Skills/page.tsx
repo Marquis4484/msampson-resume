@@ -31,7 +31,7 @@ export default function Skills() {
         Here is a list of coding langauges, frameworks and libraries that
         I&apos;ve been using since I decided to study software development.
       </p>
-      <div className="flex flex-wrap bg-th-content  rounded-[50px] my-8 py-8 items-center justify-center self-center tablet:w-2/5">
+      <div className="flex flex-wrap bg-th-content  rounded-[50px] my-8 py-8 items-center justify-center self-center tablet:w-2/5 phone:w-3/5">
         <div className="mx-[12px] flex flex-col items-center">
           <FaReact className="text-[50px]  text-th-background" />
           <p className="text-th-text-ms">React</p>
