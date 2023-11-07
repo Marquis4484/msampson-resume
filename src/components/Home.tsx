@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import HeadshotH from "public/assets/CityPhoto.jpg";
 
-// Home Page
+// Home Page 
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
