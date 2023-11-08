@@ -23,7 +23,7 @@ export default function RootLayout({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${roboto.className} ${caveat.variable} font-sans`}>
+      <body className={`${roboto.className} font-sans`}>
         <Providers>
           <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 
