@@ -33,6 +33,7 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
   const themes = [
     { name: "Dark" },
     { name: "Forrest" },
+    { name: "DarkCherry" },
     { name: "Sky" },
     { name: "Strawberry" },
     { name: "Normal" },

@@ -15,6 +15,7 @@ export default function Home() {
   const themes = [
     { name: "Dark" },
     { name: "Forrest" },
+    { name: "DarkCherry" },
     { name: "Sky" },
     { name: "Strawberry" },
     { name: "Normal" },

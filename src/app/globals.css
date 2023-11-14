@@ -4,109 +4,126 @@
 
 /* initial theme for browser */
 :root {
-   --primary: #237748;
-   --primary-focus: #f986c2;
+  --primary: #237748;
+  --primary-focus: #f986c2;
 
-   --secondary: #f986c2;
+  --secondary: #f986c2;
 
-   --accent: #f986c2;
-   --primary: #402f4b;
-   --primary-focus: #1a1320;
+  --accent: #f986c2;
+  --primary: #402f4b;
+  --primary-focus: #1a1320;
 
-   --secondary: #dfbbf7;
-   --accent: #eca2a2;
+  --secondary: #dfbbf7;
+  --accent: #eca2a2;
 
-   --text-ms: #000000;
-   --background: #ffffff;
-   --nav-link: #adadad;
-   --desc: #7b7b7b;
-   --content: #a3a3a3;
-   --button: #919191;
-   --sidebar: #3b3b3b;
-   --button-highlight: #2f2f2f;
+  --text-ms: #000000;
+  --background: #ffffff;
+  --nav-link: #adadad;
+  --desc: #7b7b7b;
+  --content: #a3a3a3;
+  --button: #919191;
+  --sidebar: #3b3b3b;
+  --button-highlight: #2f2f2f;
 }
 
 [data-theme="dark"] {
-   --primary: #402f4b;
-   --primary-focus: #1a1320;
+  --primary: #402f4b;
+  --primary-focus: #1a1320;
 
-   --secondary: #dfbbf7;
-   --accent: #eca2a2;
+  --secondary: #dfbbf7;
+  --accent: #eca2a2;
 
-   --text-ms: #a3a3a3;
-   --background: #262d3e;
-   --nav-link: #1a144c;
-   --desc: #16045c;
-   --content: #130941;
-   --button: #060438;
-   --sidebar: #100435;
-   --button-highlight: #13053a;
+  --text-ms: #a3a3a3;
+  --background: #262d3e;
+  --nav-link: #1a144c;
+  --desc: #16045c;
+  --content: #130941;
+  --button: #060438;
+  --sidebar: #100435;
+  --button-highlight: #13053a;
 }
 
 [data-theme="sky"] {
-   --primary: #402f4b;
-   --primary-focus: #1a1320;
+  --primary: #402f4b;
+  --primary-focus: #1a1320;
 
-   --secondary: #9ad4d1;
-   --accent: #eca2a2;
+  --secondary: #9ad4d1;
+  --accent: #eca2a2;
 
-   --text-ms: #f2f2f2;
-   --background: #19a59e;
-   --nav-link: #39c4d4;
-   --desc: #20a3ac;
-   --content: #0b87ad;
-   --button: #115783;
-   --sidebar: #083d56;
-   --button-highlight: #002a3f;
+  --text-ms: #f2f2f2;
+  --background: #19a59e;
+  --nav-link: #39c4d4;
+  --desc: #20a3ac;
+  --content: #0b87ad;
+  --button: #115783;
+  --sidebar: #083d56;
+  --button-highlight: #002a3f;
 }
 
 [data-theme="strawberry"] {
-   --primary: #402f4b;
-   --primary-focus: #1a1320;
+  --primary: #402f4b;
+  --primary-focus: #1a1320;
 
-   --secondary: #dfbbf7;
-   --accent: #eca2a2;
+  --secondary: #dfbbf7;
+  --accent: #eca2a2;
 
-   --text-ms: #f2f2f2;
-   --background: #f47676;
-   --nav-link: #ff1919;
-   --desc: #e42121;
-   --content: #e72121;
-   --button: #b80707;
-   --sidebar: #8b0909;
-   --button-highlight: #640000;
+  --text-ms: #f2f2f2;
+  --background: #f47676;
+  --nav-link: #ff1919;
+  --desc: #e42121;
+  --content: #e72121;
+  --button: #b80707;
+  --sidebar: #8b0909;
+  --button-highlight: #640000;
 }
 
 [data-theme="forrest"] {
-   --primary: #402f4b;
-   --primary-focus: #1a1320;
+  --primary: #402f4b;
+  --primary-focus: #1a1320;
 
-   --secondary: #dfbbf7;
-   --accent: #eca2a2;
+  --secondary: #dfbbf7;
+  --accent: #eca2a2;
 
-   --text-ms: #c8c8c8;
-   --background: #539e2d;
-   --nav-link: #40bc40;
-   --desc: #38b551;
-   --content: #14af48;
-   --button: #128909;
-   --sidebar: #0f8b18;
-   --button-highlight: #10641a;
+  --text-ms: #c8c8c8;
+  --background: #539e2d;
+  --nav-link: #40bc40;
+  --desc: #38b551;
+  --content: #14af48;
+  --button: #128909;
+  --sidebar: #0f8b18;
+  --button-highlight: #10641a;
 }
 
 [data-theme="normal"] {
-   --primary: #402f4b;
-   --primary-focus: #1a1320;
+  --primary: #402f4b;
+  --primary-focus: #1a1320;
 
-   --secondary: #dfbbf7;
-   --accent: #eca2a2;
+  --secondary: #dfbbf7;
+  --accent: #eca2a2;
 
-   --text-ms: #000000;
-   --background: #ffffff;
-   --nav-link: #adadad;
-   --desc: #7b7b7b;
-   --content: #a3a3a3;
-   --button: #919191;
-   --sidebar: #3b3b3b;
-   --button-highlight: #2f2f2f;
+  --text-ms: #000000;
+  --background: #ffffff;
+  --nav-link: #adadad;
+  --desc: #7b7b7b;
+  --content: #a3a3a3;
+  --button: #919191;
+  --sidebar: #3b3b3b;
+  --button-highlight: #2f2f2f;
+}
+
+[data-theme="darkcherry"] {
+  --primary: #5d1515;
+  --primary-focus: #8f1e18;
+
+  --secondary: #8b2604;
+  --accent: #401010;
+
+  --text-ms: #000000;
+  --background: #450f0f;
+  --nav-link: #7c2511;
+  --desc: #733d27;
+  --content: #511515;
+  --button: #791111;
+  --sidebar: #6c2626;
+  --button-highlight: #a70e0e;
 }
