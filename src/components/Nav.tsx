@@ -30,6 +30,8 @@ export default function Nav({ isOpen, setIsOpen }: Nav) {
   const { theme, setTheme } = useTheme();
   const [themeIdx, setThemeIdx] = useState(0);
 
+  // Updated colors for Nav button not for home button
+
   const themes = [
     { name: "Dark" },
     { name: "Forrest" },
