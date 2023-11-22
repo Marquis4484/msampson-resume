@@ -12,6 +12,9 @@ export default function Home() {
   const { theme, setTheme } = useTheme();
   const [themeIdx, setThemeIdx] = useState(0);
 
+
+  // Updated colors for Home button not for Nav button
+
   const themes = [
     { name: "Dark" },
     { name: "Forrest" },
