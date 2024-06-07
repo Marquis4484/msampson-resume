@@ -8,6 +8,6 @@ This application contains links to all of the most recent software engineering p
 
 ## Purpose of this Project
 
-This website represents a lot of what I've learned while studying to become a software engineer. I wanted to create something that looks good while being fundamentally different from other websites.
+This website represents a lot of what I've learned while studying to become a Software Engineer. I wanted to create something that looks good while being fundamentally different from other websites.
 
 ### Thank you for viewing my Web Portfolio!
