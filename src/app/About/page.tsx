@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="phone:h-fit laptop:h-screen duration-300 bg-th-background  pt-[80px]">
       <h1 className=" text-th-text-ms text-[50px]  text-bold text-center p-[20px]  font-black">
-        A Little Bit About Myself
+        About Myself
       </h1>
       <div className="flex tablet:flex-row phone:flex-col tablet:pt-[15px]">
         <Image
@@ -19,18 +19,22 @@ export default function About() {
 
         <div className="flex flex-col  py-6">
           <h2 className="font-semibold px-[20px] text-th-text-ms text-[25px] text-center pb-[20px]">
-            When it comes to my work ethic...
+            What can you expect from me:
           </h2>
           <p className="phone:px-[20px] tablet:mx-[50px] text-th-text-ms items-center text-[20px] self-center rounded-xl py-[10px] w-4/5 bg-th-content flex-2">
-            I am a hard-working individual with a tenacious attitude and an
-            eagerness to learn. Perseverance is what allows me to learn and grow
-            within this field. Without these traits, I would not be able to
-            thrive as a software engineer. If I were to work alongside your
-            company, I would bring nothing but positive energy and creative
-            solutions to your team&apos;s workflow. Please, consider me for
-            whatever project you have in mind. Also, if you would like to view a
-            copy of my resume, click on the button below. Otherwise, please
-            enjoy viewing the rest of my website!
+            I am a passionate Software Engineer specializing in Next.js, React,
+            Tailwind CSS, JavaScript, TypeScript, Express, Node.js, and Swift. I
+            am currently learning to work with Firebase, mySQL, and MongoDB. I
+            have over 5 years of experience building applications that are
+            hosted and can be viewed on the web. I am also a hard-working
+            individual with a tenacious attitude and an eagerness to learn.
+            Perseverance is what allows me to learn and grow within this field.
+            Without these traits, I could not thrive as a software engineer. If
+            I were to work alongside your company, I would bring positive energy
+            and creative solutions to your team&apos;s workflow. Please,
+            consider me for whatever project you have in mind. Also, if you
+            would like to view a copy of my resume, click on the button below.
+            Otherwise, please enjoy viewing the rest of my website!
           </p>
           <Link
             href={"Online Copy of MarquisS Resume .pdf"}
