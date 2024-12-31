@@ -97,20 +97,12 @@ export default function Skills() {
           <p className="text-th-text-ms">GraphQL</p>
         </div>
         <div className="m-[12px] flex flex-col items-center">
-          <DiJava className="text-[50px] text-th-background" />
-          <p className="text-th-text-ms">Java</p>
-        </div>
-        <div className="m-[12px] flex flex-col items-center">
           <SiHtml5 className="text-[50px]  text-th-background" />
           <p className="text-th-text-ms">HTML</p>
         </div>
         <div className="flex flex-col items-center mx-[20px]">
           <TbBrandNextjs className="text-[50px] text-th-background" />
           <p className="text-th-text-ms">Next.js</p>
-        </div>
-        <div className="flex flex-col items-center mx-[20px]">
-          <SiCplusplus className="text-[50px] text-th-background" />
-          <p className="text-th-text-ms">C++</p>
         </div>
       </div>
     </div>
