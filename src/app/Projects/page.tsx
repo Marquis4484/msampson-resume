@@ -33,7 +33,7 @@ export default function Projects() {
       github_link: "https://github.com/Marquis4484/tealaxation",
       live_link: "https://tealaxation.netlify.app/",
       description:
-        "I adapted a mockup from Figma into a fully responsive website with over 1,000 lines of code that focuses on shipping premium tea at an affordable price. Within a few weeks, I developed the functionality of the modern website using vanilla JavaScript and ES6 modules. I also constructed a REST API hosted on GitHub Pages that contains all of the products for the online store. ",
+        "I adapted a mockup from Figma into a fully responsive website with over 1,000 lines of code that focuses on shipping premium tea at an affordable price. Within a few weeks, I developed the functionality of the modern website using vanilla JavaScript and ES6 modules. I also constructed a REST API hosted on GitHub Pages that contains all of the products for the online store. This was a challenging project because it has been some time since I've only used JavaScript, HTML, and CSS to build a website. However, I challenged myself to do it because I knew that attempting to build a project such as this project would strengthen my skills in using JavaScript. ",
     },
 
     {
